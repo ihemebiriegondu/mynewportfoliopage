@@ -1,0 +1,78 @@
+.projectcard {
+    overflow: hidden;
+    position: relative;
+    border: 0 !important;
+    transition: all 0.5s ease-in-out;
+}
+
+.projectcardbody {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+.cardTag {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 20%;
+    background-color: #93f9c8;
+    text-align: center;
+    color: blueviolet;
+}
+
+.projectcardbodyImg {
+    height: 100%;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.projectcardbodyImg img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease-in-out;
+}
+
+.cardText {
+    position: absolute;
+    bottom: 0;
+    height: 0%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.348);
+    z-index: 10;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.279);
+    transition: all 0.5s ease-in-out;
+}
+
+.cardTextDiv  {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    color: #93f9c8;
+}
+
+.projectcard:hover {
+    cursor: pointer;
+}
+
+.projectcard:hover .projectcardbodyImg img {
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+}
+
+.projectcard:hover .cardText {
+    display: flex;
+    height: 20%;
+    transition: all 0.5s ease-in-out;
+}
+
+
+@media (max-width: 1200px) {
+    
+}

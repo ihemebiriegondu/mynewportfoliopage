@@ -1,0 +1,47 @@
+
+.mainAbout {
+    background: #0c0531;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding-top: 9rem;
+    padding-bottom: 4rem;
+}
+
+.mainAboutDiv{
+    height: 100%;
+    background: #0c0531;
+}
+
+.about-img-sub-div {
+    height: calc(10rem + 8vw);
+    width: calc(10rem + 8vw);
+    background-color: black;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.about-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.skillsAndabout {
+    background-color: #0d0537;
+}
+
+.aboutme-icons {
+    color: #93f9c8;
+}
+
+span ,a {
+    color: #93f9c8 !important;
+}
+
+.aboutme-icons-div {
+    border: 2px solid #93f9c8;
+    border-radius: 50%;
+}

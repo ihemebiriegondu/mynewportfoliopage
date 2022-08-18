@@ -1,0 +1,95 @@
+#root {
+    background-color: #0c0531;
+}
+
+.main-modal-backdrop {
+    background-color: rgba(225, 225, 225, 0.5);
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2000;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    display: none;
+}
+
+.main-modal-backdrop.active {
+    display: flex;
+    height: 100%;
+}
+
+.main-modal {
+    background-color: #0c0531;
+    height: 0%;
+    width: 100%;
+    border-radius: 20px 20px 0 0 !important;
+    transition: all 0.5s ease-in-out;
+}
+
+.main-modal-backdrop.active .main-modal {
+    height: 93%;
+    transition: all 0.5s ease-in-out;
+}
+
+.closeMark{
+    color: rgba(255, 255, 255, 0.8);
+    transition: all 0.25s ease-in-out;
+}
+
+.closeMark:hover {
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+    color: white;
+}
+
+.modal-container {
+    height: 93%;
+    width: 100%;
+}
+
+.modal-carousel-div {
+    height: 100%;
+    width: 100%;
+}
+
+.main-carousel {
+    overflow: hidden;
+    height: 100%;
+    border-radius: 40px;
+}
+
+.carousel-inner {
+    height: 100% !important;
+    border-radius: 40px;
+}
+
+.carousel-item {
+    height: 100%;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.main-carousel img {
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.carousel-control-next, .carousel-control-prev {
+    display: none !important;
+}
+
+.carousel-indicators button, .carousel-indicators [data-bs-target] {
+    outline: none !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+button {
+    outline: none !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}

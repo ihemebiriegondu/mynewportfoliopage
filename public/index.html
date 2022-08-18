@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo.png" />
+  <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -24,12 +22,13 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
+  <title>Egondu Ihemebiri</title>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
@@ -39,5 +38,89 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  </body>
+</body>
+
 </html>
+
+<script>
+  function openModal1() {
+    const AllModals = document.querySelectorAll("main-modal-backdrop");
+    AllModals.forEach(modal => {
+      modal.classList.remove("active")
+    })
+
+    const modal1 = document.getElementById("modal1");
+    modal1.classList.add("active")
+
+  }
+
+  function openModal2() {
+    const AllModals = document.querySelectorAll("main-modal-backdrop");
+    AllModals.forEach(modal => {
+      modal.classList.remove("active")
+    })
+
+    const modal2 = document.getElementById("modal2");
+    modal2.classList.add("active")
+
+  }
+
+  function openModal3() {
+    const AllModals = document.querySelectorAll("main-modal-backdrop");
+    AllModals.forEach(modal => {
+      modal.classList.remove("active")
+    })
+
+    const modal3 = document.getElementById("modal3");
+    modal3.classList.add("active")
+
+  }
+
+  function openModal4() {
+    const AllModals = document.querySelectorAll("main-modal-backdrop");
+    AllModals.forEach(modal => {
+      modal.classList.remove("active")
+    })
+
+    const modal4 = document.getElementById("modal4");
+    modal4.classList.add("active")
+
+  }
+
+  function openModal5() {
+    const AllModals = document.querySelectorAll("main-modal-backdrop");
+    AllModals.forEach(modal => {
+      modal.classList.remove("active")
+    })
+
+    const modal5 = document.getElementById("modal5");
+    modal5.classList.add("active")
+
+  }
+
+  function openModal6() {
+    const AllModals = document.querySelectorAll("main-modal-backdrop");
+    AllModals.forEach(modal => {
+      modal.classList.remove("active")
+    })
+
+    const modal6 = document.getElementById("modal6");
+    modal6.classList.add("active")
+
+  }
+
+  function closeBtnFunction() {
+    const modal1 = document.getElementById("modal1");
+    modal1.classList.remove("active")
+    const modal2 = document.getElementById("modal2");
+    modal2.classList.remove("active")
+    const modal3 = document.getElementById("modal3");
+    modal3.classList.remove("active")
+    const modal4 = document.getElementById("modal4");
+    modal4.classList.remove("active")
+    const modal5 = document.getElementById("modal5");
+    modal5.classList.remove("active")
+    const modal6 = document.getElementById("modal6");
+    modal6.classList.remove("active")
+  }
+</script>

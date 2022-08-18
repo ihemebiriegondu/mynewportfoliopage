@@ -1,0 +1,22 @@
+.cards {
+    background-color: #0d0537 !important;
+    transition: all 0.5s ease-in-out;
+    color: white !important;
+}
+
+.certificate {
+    color: #93f9c8 !important;
+    transition: all 0.5 ease-in-out;
+}
+
+.cards:hover {
+    transition: all 0.5s ease-in-out;
+    transform: translateY(10%);
+    background-color: #93f9c8 !important;
+    color: #0c0531 !important;
+}
+
+.cards:hover .certificate {
+    transition: all 0.5s ease-in-out;
+    color: rgb(100, 15, 179) !important;
+}
