@@ -22,7 +22,9 @@ function Home() {
                                 <h1 className='display-3 fw-bold'>Egondu Ihemebiri</h1>
                                 <h2 className='display-4 fw-normal mb-4'>Frontend Developer</h2>
 
-                                <p className='mb-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</p>
+                                <p className='mb-4'>
+                                I am a creative Frontend developer with experience in creating static websites and web applications. Throughout my years of experience I have worked on various projects some which involves me working alongside UI/UX designers and Backend developers and I am a well organized and collaborative team player.
+                                </p>
 
                                 <Button variant="primary" onClick={() => { navigate("/about") }} className="py-3 px-3 fw-bold mb-0 about-button">MORE ABOUT ME <HiOutlineArrowSmDown className='fs-3' /> </Button>
                                 <div className='scroll-down d-sm-none d-block'>

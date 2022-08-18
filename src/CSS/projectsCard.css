@@ -55,6 +55,7 @@
     justify-content: center;
     align-items: baseline;
     color: #93f9c8;
+    flex-wrap: wrap;
 }
 
 .projectcard:hover {
