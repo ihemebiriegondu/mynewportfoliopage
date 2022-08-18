@@ -6,8 +6,9 @@ import Cards from '../components/cards';
 import IhemebiriEgonduCV from '../assests/Ihemebiri Egondu .pdf'
 import { BsFillPersonLinesFill, BsCodeSlash, BsBraces } from 'react-icons/bs'
 import { FaHtml5, FaCss3Alt, FaBootstrap, FaSass, FaReact, FaMusic } from 'react-icons/fa'
+import { BiMoviePlay } from 'react-icons/bi'
 import { SiJavascript } from 'react-icons/si'
-import { MdLocalMovies, MdWork } from 'react-icons/md'
+import { MdWork } from 'react-icons/md'
 import { IoFastFoodSharp } from 'react-icons/io5'
 import { IoMdDownload } from 'react-icons/io'
 import { GiGraduateCap } from 'react-icons/gi'
@@ -42,7 +43,7 @@ function About() {
                       <FaMusic className='aboutme-icons h4 p-0 m-0 mb-0' />
                     </div>
                     <div className='py-sm-3 py-2 px-sm-3 px-2 aboutme-icons-div text-center me-sm-5 me-4'>
-                      <MdLocalMovies className='aboutme-icons h4 p-0 m-0 mb-0' />
+                      <BiMoviePlay className='aboutme-icons h4 p-0 m-0 mb-0' />
                     </div>
                     <div className='py-sm-3 py-2 px-sm-3 px-2 aboutme-icons-div text-center me-sm-5 me-4'>
                       <IoFastFoodSharp className='aboutme-icons h4 p-0 m-0 mb-0' />

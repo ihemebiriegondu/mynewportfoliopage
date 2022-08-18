@@ -38,22 +38,22 @@ function Contact() {
               <Form>
                 <Form.Group className="mb-3" controlId="name">
                   <Form.Label>Name</Form.Label>
-                  <Form.Control type="text" size="lg" className='form-input shadow' />
+                  <Form.Control type="text" size="lg" name='Name' className='form-input shadow' />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="email">
                   <Form.Label>Email address</Form.Label>
-                  <Form.Control type="email" size="lg" className='form-input shadow' />
+                  <Form.Control type="email" size="lg" name='Email Address' className='form-input shadow' />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="phone">
                   <Form.Label>Phone number</Form.Label>
-                  <Form.Control type="tel" size="lg" className='form-input shadow' />
+                  <Form.Control type="tel" size="lg" name='Phone Number' className='form-input shadow' />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                   <Form.Label>Message</Form.Label>
-                  <Form.Control as="textarea" rows={5} placeholder="Your message" className='form-message shadow' />
+                  <Form.Control as="textarea" rows={5} placeholder="Your message" name='Message' className='form-message shadow' />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="checkbox">
