@@ -3,13 +3,18 @@ import ProjectsCard from '../components/ProjectsCard'
 import MyModal from '../components/MyModal'
 
 import allgraphicsdesignpage from '../assests/Projects/all graphics design page.png'
+import graphicAll from '../assests/Projects/collage 3.png'
 import allslanttravelpage from '../assests/Projects/all slant travel page.png'
+import phoneTravel from '../assests/Projects/travel small.png'
 import allportfoliopage from '../assests/Projects/all portfolio page.png'
 import allTravel from '../assests//Projects/all travel page.jpg'
 import calculatorDark from '../assests/Projects/Calculator dark.png'
 import url2 from '../assests/Projects/url home (2).png'
 import url3 from '../assests/Projects/url home (3).png'
-
+import piggyBottom from '../assests/Projects/Screenshot 2022-07-15 at 14-00-48 Invest in bits and on the go with Investify - PiggyVest bottom.png'
+import piggyTop from '../assests/Projects/Screenshot 2022-07-15 at 14-00-48 Invest in bits and on the go with Investify - PiggyVest top.png'
+import portfolioBottom from '../assests/Projects/Screenshot 2022-07-16 at 22-05-42 Egondu Ihemebiri white bottom.png'
+import portfolioTop from '../assests/Projects/Screenshot 2022-07-16 at 22-05-42 Egondu Ihemebiri white top.png'
 import calculator from '../assests/Projects/calculator.png'
 import collage from '../assests/Projects/collage.png'
 import collage2 from '../assests/Projects/collage2.png'
@@ -69,15 +74,15 @@ function Projects() {
         <div className='modals'>
           <MyModal modalId={"modal1"} ProjectName={"Graphics designer's portfolio page"} ProjectLanguages={"html, bootstrap, scss, js"} ProjectPreviewLink={"https://graphizdemo.egondu-ihemebiri.com/"}
             ProjectPreviewLinkName={"graphizdemo.egondu-ihemebiri.com"} ProjectGitHubLink={"https://github.com/ihemebiriegondu/Graphics-Designer-theme"} ProjectGitHubLinkName={"github.com/ihemebiriegondu/Graphics-Designer-theme"} ProjectImage1={allgraphicsdesignpage}
-            ProjectImage2={allgraphicsdesignpage} ProjectImage3={allgraphicsdesignpage}
+            ProjectImage2={graphicAll} ProjectImage3={allgraphicsdesignpage}
             className="" />
           <MyModal modalId={"modal2"} ProjectName={"Holidayz travel page (in progress)"} ProjectLanguages={"html, css, bootstrap, js"} ProjectPreviewLink={""}
             ProjectPreviewLinkName={""} ProjectGitHubLink={"https://github.com/ihemebiriegondu/same-travel-page.git"} ProjectGitHubLinkName={"github.com/ihemebiriegondu/same-travel-page"} ProjectImage1={allslanttravelpage}
-            ProjectImage2={allTravel} ProjectImage3={allslanttravelpage}
+            ProjectImage2={allTravel} ProjectImage3={phoneTravel}
             className="" />
           <MyModal modalId={"modal3"} ProjectName={"My portfolio page V1.0"} ProjectLanguages={"html, css, scss, bootstrap, js"} ProjectPreviewLink={"https://egonduihemebiri.netlify.app/"}
             ProjectPreviewLinkName={"egonduihemebiri.netlify.app"} ProjectGitHubLink={"https://github.com/ihemebiriegondu/EGO.git"} ProjectGitHubLinkName={"github.com/ihemebiriegondu/EGO"} ProjectImage1={allportfoliopage}
-            ProjectImage2={allportfoliopage} ProjectImage3={allportfoliopage}
+            ProjectImage2={portfolioTop} ProjectImage3={portfolioBottom}
             className="" />
           <MyModal modalId={"modal4"} ProjectName={"My Basic calculator"} ProjectLanguages={"html, css, js"} ProjectPreviewLink={"https://ego-simple-calculator.netlify.app/"}
             ProjectPreviewLinkName={"ego-simple-calculator.netlify.app"} ProjectGitHubLink={"https://github.com/ihemebiriegondu/My-Simple-Calculator"} ProjectGitHubLinkName={"github.com/ihemebiriegondu/My-Simple-Calculator"} ProjectImage1={calculator}
@@ -89,7 +94,7 @@ function Projects() {
             className="" />
           <MyModal modalId={"modal6"} ProjectName={"PiggyVest website clone"} ProjectLanguages={"html, css, bootstrap, js"} ProjectPreviewLink={"https://piggy-clone.netlify.app/"}
             ProjectPreviewLinkName={"piggy-clone.netlify.app"} ProjectGitHubLink={"https://github.com/ihemebiriegondu/PiggyVest-Clone"} ProjectGitHubLinkName={"github.com/ihemebiriegondu/PiggyVest-Clone"} ProjectImage1={collage2}
-            ProjectImage2={collage2} ProjectImage3={collage2}
+            ProjectImage2={piggyTop} ProjectImage3={piggyBottom}
             className="" />
         </div>
       </div>

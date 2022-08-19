@@ -53,7 +53,7 @@ function About() {
                     </div>
                   </div>
                   <div className=''>
-                    <a href={IhemebiriEgonduCV} target={'_blank'} rel="noreferrer" variant="primary" className="py-3 btn px-3 fw-bold mb-0 about-button mt-5 text-decoration-none">DOWNLOAD CV <IoMdDownload className='fs-3' /> </a>
+                    <a href={IhemebiriEgonduCV} target={'_blank'} rel="noreferrer" download variant="primary" className="py-3 btn px-3 fw-bold mb-0 about-button mt-5 text-decoration-none">DOWNLOAD CV <IoMdDownload className='fs-3' /> </a>
                   </div>
                 </div>
               </div>
@@ -98,10 +98,10 @@ function About() {
               </div>
               <div className='row row-cols-xl-3 row-cols-md-2 row-cols-1 justify-content-center col-md-12 col-sm-10 m-auto'>
                 <div className='col mb-md-0 mb-5'>
-                  <Cards cardTitle={"2015 - 2018"} cardSubTitle={"HIGH SCHOOL DIPLOMA"} CardText={"Some quick example text to build on the card title and make up the bulk of the card's content."} />
+                  <Cards cardTitle={"2015 - 2018"} cardSubTitle={"HIGH SCHOOL DIPLOMA"} CardText={""} />
                 </div>
                 <div className='col'>
-                  <Cards cardTitle={"2020 - PRESENT"} cardSubTitle={"BACHELOR'S DEGREE"} CardText={"Some quick example text to build on the card title and make up the bulk of the card's content."} />
+                  <Cards cardTitle={"2020 - PRESENT"} cardSubTitle={"BACHELOR'S DEGREE"} CardText={""} />
                 </div>
               </div>
               <div className='text-center mb-4 mt-5'>
@@ -109,10 +109,10 @@ function About() {
               </div>
               <div className='row row-cols-xl-3 row-cols-md-2 row-cols-1 justify-content-center col-md-12 col-sm-10 m-auto'>
                 <div className='col mb-md-0 mb-5'>
-                  <Cards cardTitle={"2022"} cardSubTitle={"FRONTEND DEVELOPER INTERN (HTML, CSS, JS"} CardText={"Some quick example text to build on the card title and make up the bulk of the card's content."} />
+                  <Cards cardTitle={"2022"} cardSubTitle={"FRONTEND DEVELOPER INTERN (HTML, CSS, JS"} CardText={"Worked with my team members in planning website development, converting mockups into useable web presence with HTML, CSS and JavaScript."} />
                 </div>
                 <div className='col'>
-                  <Cards cardTitle={"2022 - PRESENT"} cardSubTitle={"FRONTEND DEVELOPER INTERN (REACT JS)"} CardText={"Some quick example text to build on the card title and make up the bulk of the card's content."} />
+                  <Cards cardTitle={"2022 - PRESENT"} cardSubTitle={"FRONTEND DEVELOPER INTERN (REACT JS)"} CardText={"Currently working with ReactJS to create dynamic webpages and web applications."} />
                 </div>
               </div>
             </div>

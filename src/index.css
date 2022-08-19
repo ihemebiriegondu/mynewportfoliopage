@@ -27,6 +27,19 @@ code {
     monospace;
 }
 
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1b033c;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #93f9c8;
+  border-radius: 20px;
+}
+
 .hamburger-icon,
 .hamburger-icon span {
   color: #93f9c8 !important;
@@ -97,7 +110,9 @@ code {
   transition: all 0.5s ease-in-out !important;
 }
 
-.navs:hover, .navs:active, .navs:focus {
+.navs:hover,
+.navs:active,
+.navs:focus {
   color: #93e8f9 !important;
 }
 
@@ -110,7 +125,9 @@ code {
   transition: width .3s !important;
 }
 
-.navs:hover::after, .navs:active::after, .navs:focus::after {
+.navs:hover::after,
+.navs:active::after,
+.navs:focus::after {
   width: 100% !important;
 }
 

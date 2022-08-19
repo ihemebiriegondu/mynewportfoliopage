@@ -62,9 +62,6 @@ function Contact() {
                 <Button variant="primary" type="submit" className="py-3 px-3 fw-bold mb-0 about-button mt-2 w-100">SUBMIT <IoIosSend className='fs-3 ms-3' /> </Button>
               </Form>
             </div>
-            <div>
-
-            </div>
           </div>
         </div>
       </div>
