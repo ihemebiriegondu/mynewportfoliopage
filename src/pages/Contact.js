@@ -35,7 +35,7 @@ function Contact() {
               </div>
             </div>
             <div className='col-lg-6 col-md-7 m-auto ps-md-5'>
-              <Form>
+              <Form netlify>
                 <Form.Group className="mb-3" controlId="name">
                   <Form.Label>Name</Form.Label>
                   <Form.Control type="text" size="lg" name='Name' className='form-input shadow' />
