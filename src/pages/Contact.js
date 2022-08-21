@@ -1,14 +1,11 @@
 import React from 'react'
 import SocialIcons from '../components/SocialIcons'
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
 
 import { MdEmail } from 'react-icons/md'
 import { ImPhone, ImLocation2 } from 'react-icons/im'
-import { IoIosSend } from 'react-icons/io'
-
 
 import '../CSS/contact.css'
+import MyForm from '../components/MyForm';
 
 function Contact() {
   return (
@@ -35,32 +32,7 @@ function Contact() {
               </div>
             </div>
             <div className='col-lg-6 col-md-7 m-auto ps-md-5'>
-              <Form name='ContactMe' netlify>
-                <Form.Group className="mb-3" controlId="name">
-                  <Form.Label>Name</Form.Label>
-                  <Form.Control type="text" size="lg" name='Name' className='form-input shadow' />
-                </Form.Group>
-
-                <Form.Group className="mb-3" controlId="email">
-                  <Form.Label>Email address</Form.Label>
-                  <Form.Control type="email" size="lg" name='Email Address' className='form-input shadow' />
-                </Form.Group>
-
-                <Form.Group className="mb-3" controlId="phone">
-                  <Form.Label>Phone number</Form.Label>
-                  <Form.Control type="tel" size="lg" name='Phone Number' className='form-input shadow' />
-                </Form.Group>
-
-                <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                  <Form.Label>Message</Form.Label>
-                  <Form.Control as="textarea" rows={5} placeholder="Your message" name='Message' className='form-message shadow' />
-                </Form.Group>
-
-                <Form.Group className="mb-3" controlId="checkbox">
-                  <Form.Check type="checkbox" label="I'm not a robot" className='form-checkbox' />
-                </Form.Group>
-                <Button variant="primary" type="submit" className="py-3 px-3 fw-bold mb-0 about-button mt-2 w-100">SUBMIT <IoIosSend className='fs-3 ms-3' /> </Button>
-              </Form>
+              <MyForm />
             </div>
           </div>
         </div>

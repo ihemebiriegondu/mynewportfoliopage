@@ -1,0 +1,59 @@
+.form-input,
+.form-message {
+    background-color: #0d0537 !important;
+    border: none !important;
+    resize: none;
+    border-radius: 10px;
+    outline: none !important;
+    color: white !important;
+    font-size: 1.1rem;
+}
+
+.form-input:focus,
+.form-message:focus {
+    background-color: #93f9c8 !important;
+    color: #0c0531 !important;
+}
+
+.form-input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 40px #0d0537 inset !important;
+    -webkit-text-fill-color: white;
+    border: none !important;
+}
+
+
+.form-input:-webkit-autofill:hover,
+.form-input:-webkit-autofill:focus,
+.form-input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 40px #93f9c8 inset !important;
+    -webkit-text-fill-color: #0c0531 !important;
+    border: none !important;
+}
+
+.form-check-input[type=checkbox] {
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+    outline: none !important;
+}
+
+.form-check-input {
+    width: 1.1rem;
+    height: 1.1rem;
+    box-shadow: none !important;
+    border: none !important;
+    outline: none !important;
+}
+
+.form-check-input:checked[type=checkbox] {
+    background-image: url(../assests/check.svg);
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.form-check-input:checked {
+    background-color: #93f9c8 !important;
+    border-color: #93f9c8 !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
