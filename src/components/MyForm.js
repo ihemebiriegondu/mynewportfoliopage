@@ -7,7 +7,7 @@ import '../CSS/form.css'
 
 const MyForm = () => {
     return (
-        <form name='ContactMeForm' method='post' data-netlify='true' onSubmit='submit'>
+        <form name='ContactMeForm' method='post'>
             <input type="hidden" name="form-name" value="ContactMeForm" />
             <div className="mb-3 d-flex flex-column">
                 <label htmlFor='name' className="form-label">Name</label>
@@ -29,11 +29,11 @@ const MyForm = () => {
                 <textarea rows={'5'} placeholder='Your message' name='Message' id='message' className='form-message px-3 pt-2 shadow'></textarea>
             </div>
 
-            <div className="mb-3 form-check d-flex" required>
+            {/*<div className="mb-3 form-check d-flex" required>
                 <input id='checkbox' type={'checkbox'} className='form-checkbox form-check-input'></input>
                 <label htmlFor='checkbox' className='ms-3'>I'm not a robot</label>
-            </div>
-
+    </div>*/}
+            
             <Button variant="primary" type="submit" className="py-3 px-3 fw-bold mb-0 about-button mt-2 w-100">SUBMIT <IoIosSend className='fs-3 ms-3' /> </Button>
         </form>
     )
