@@ -111,7 +111,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .navs:hover,
-.navs:active,
+.navs.active,
 .navs:focus {
   color: #93e8f9 !important;
 }
@@ -126,7 +126,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .navs:hover::after,
-.navs:active::after,
+.navs.active::after,
 .navs:focus::after {
   width: 100% !important;
 }
@@ -163,5 +163,12 @@ body::-webkit-scrollbar-thumb {
 
   100% {
     transform: scale(1, 1);
+  }
+}
+
+
+@media (max-width: 1024px) {
+  body::-webkit-scrollbar {
+    width: 0;
   }
 }

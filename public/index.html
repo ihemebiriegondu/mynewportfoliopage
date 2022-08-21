@@ -43,6 +43,52 @@
 </html>
 
 <script>
+  //nav active status
+
+  function addActiveToNav1() {
+    const allNavs = document.querySelectorAll(".navs");
+    allNavs.forEach(nav => {
+      nav.classList.remove("active")
+    })
+
+    const nav1 = document.getElementById("nav1");
+    nav1.classList.add("active")
+  }
+
+  function addActiveToNav2() {
+    const allNavs = document.querySelectorAll(".navs");
+    allNavs.forEach(nav => {
+      nav.classList.remove("active")
+    })
+
+    const nav2 = document.getElementById("nav2");
+    nav2.classList.add("active")
+  }
+
+  function addActiveToNav3() {
+    const allNavs = document.querySelectorAll(".navs");
+    allNavs.forEach(nav => {
+      nav.classList.remove("active")
+    })
+
+    const nav3 = document.getElementById("nav3");
+    nav3.classList.add("active")
+  }
+
+  function addActiveToNav4() {
+    const allNavs = document.querySelectorAll(".navs");
+    allNavs.forEach(nav => {
+      nav.classList.remove("active")
+    })
+
+    const nav4 = document.getElementById("nav4");
+    nav4.classList.add("active")
+  }
+
+
+
+  //modal content
+
   function openModal1() {
     const AllModals = document.querySelectorAll("main-modal-backdrop");
     AllModals.forEach(modal => {
