@@ -19,13 +19,17 @@ import calculator from '../assests/Projects/calculator.png'
 import collage from '../assests/Projects/collage.png'
 import collage2 from '../assests/Projects/collage2.png'
 
+import foodApp from '../assests/Projects/food.jpg'
+import foodApp2 from '../assests/Projects/Screenshot 2022-08-30 at 16-59-08 React App.png'
+import foodApp3 from '../assests/Projects/Screenshot 2022-08-30 at 17-05-56 React App.png'
+
 import { RiProjectorFill } from 'react-icons/ri'
 
 
 import '../CSS/projects.css'
 
 
-function Projects() { 
+function Projects() {
   return (
     <div className='mainProject'>
       <div className='col-12 mainProjectDiv'>
@@ -33,6 +37,12 @@ function Projects() {
         <h5 className='mb-5 fs-6 text-center' style={{ color: '#93f9c8' }}>Some of my recent projects <RiProjectorFill className='ms-2 fs-5 project-icon' /></h5>
         <div className='m-auto col-11'>
           <div className='row row-cols-lg-3 row-cols-md-2 row-cols-1 g-4'>
+            <div className='col'>
+              <div onClick={window['openModal7']}>
+                <ProjectsCard ProjectsCardImage={foodApp} ProjectsCardName={"Food ordering app"} ProjectPreviewLink={"https://lilies-react-food-app.netlify.app/"}
+                  ProjectGitHubLink={"https://github.com/ihemebiriegondu/react-food-app.git"} />
+              </div>
+            </div>
             <div className='col'>
               <div onClick={window['openModal1']}>
                 <ProjectsCard ProjectsCardImage={allgraphicsdesignpage} ProjectsCardName={"Graphics designer's portfolio page"} ProjectPreviewLink={"https://graphizdemo.egondu-ihemebiri.com/"}
@@ -95,6 +105,10 @@ function Projects() {
           <MyModal modalId={"modal6"} ProjectName={"PiggyVest website clone"} ProjectLanguages={"html, css, bootstrap, js"} ProjectPreviewLink={"https://piggy-clone.netlify.app/"}
             ProjectPreviewLinkName={"piggy-clone.netlify.app"} ProjectGitHubLink={"https://github.com/ihemebiriegondu/PiggyVest-Clone"} ProjectGitHubLinkName={"github.com/ihemebiriegondu/PiggyVest-Clone"} ProjectImage1={collage2}
             ProjectImage2={piggyTop} ProjectImage3={piggyBottom}
+            className="" />
+          <MyModal modalId={"modal7"} ProjectName={"Food ordering app"} ProjectLanguages={"ReactJs, css"} ProjectPreviewLink={"https://lilies-react-food-app.netlify.app/"}
+            ProjectPreviewLinkName={"lilies food app"} ProjectGitHubLink={"https://github.com/ihemebiriegondu/react-food-app.git"} ProjectGitHubLinkName={"github.com/ihemebiriegondu/react-food-app"} ProjectImage1={foodApp}
+            ProjectImage2={foodApp2} ProjectImage3={foodApp3} ProjectInfo={'My first ReactJS project (a pixel perfect project) built from a '} ProjectFigmaLink={'https://www.figma.com/file/djFiNRn2sxcCUjcWyFs9Y0/Lilies-Food-Place-(Community)-(Copy)-(Copy)?node-id=0%3A1'}
             className="" />
         </div>
       </div>

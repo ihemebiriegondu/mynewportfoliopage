@@ -16,6 +16,18 @@ import './index.css';
 
 
 function App() {
+
+  function AddActive(event) {
+    const navLinks = document.querySelectorAll(".links");
+
+    for (let i = 0; i < navLinks.length; i++) {
+      navLinks[i].className = navLinks[i].className.replace(" active", "");
+    }
+    event.currentTarget.className += " active";
+
+  }
+
+
   return (
     <Router>
       <header>
@@ -35,10 +47,10 @@ function App() {
               <Offcanvas.Body className="align-items-center">
                 <SocialIcons SocialIconContainerClass={"home-social-icons-container d-sm-none d-flex"} SocialIconClass={'socialIconsHome'} />
                 <Nav className="justify-content-center flex-grow-1 pe-3">
-                  <Nav.Link className="p-0"><Link id="nav1" className="links navs active me-lg-5 mb-lg-0 mb-3" to="/" onClick={window['addActiveToNav1']}>Home</Link></Nav.Link>
-                  <Nav.Link className="p-0"><Link id="nav2" className="links navs me-lg-5 mb-lg-0 mb-3" to="/about" onClick={window['addActiveToNav2']}>About me</Link></Nav.Link>
-                  <Nav.Link className="p-0"><Link id="nav3" className="links navs me-lg-5 mb-lg-0 mb-3" to="/projects" onClick={window['addActiveToNav3']}>My projects</Link></Nav.Link>
-                  <Nav.Link className="p-0"><Link id="nav4" className="links navs mb-lg-0 mb-5" to="/contact" onClick={window['addActiveToNav4']}>Contact me</Link></Nav.Link>
+                  <Nav.Link className="p-0"><Link id="nav1" className="links navs active me-lg-5 mb-lg-0 mb-3" to="/" onClick={(event) => {AddActive(event)}}>Home</Link></Nav.Link>
+                  <Nav.Link className="p-0"><Link id="nav2" className="links navs me-lg-5 mb-lg-0 mb-3" to="/about" onClick={(event) => {AddActive(event)}}>About me</Link></Nav.Link>
+                  <Nav.Link className="p-0"><Link id="nav3" className="links navs me-lg-5 mb-lg-0 mb-3" to="/projects" onClick={(event) => {AddActive(event)}}>My projects</Link></Nav.Link>
+                  <Nav.Link className="p-0"><Link id="nav4" className="links navs mb-lg-0 mb-5" to="/contact" onClick={(event) => {AddActive(event)}}>Contact me</Link></Nav.Link>
                 </Nav>
                 <a href="https://www.fiverr.com/share/L0DNY0" target={"_blank"} rel="noreferrer" variant="primary" className="hireMeButton btn px-3 py-2 text-uppercase">Hire Me <BsBriefcaseFill className="ms-3 mb-1" /> </a>
               </Offcanvas.Body>

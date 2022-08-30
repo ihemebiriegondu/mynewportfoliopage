@@ -6,20 +6,21 @@
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
     width: 100%;
-    height: 0;
-    top: 0;
-    bottom: 0;
+    height: 0%;
     z-index: 2000;
+    bottom: 0;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
-    display: none;
+    visibility: hidden;
     transition: all 0.5s ease-in-out !important;
 }
 
 .main-modal-backdrop.active {
     display: flex;
     height: 100%;
+    top: 0;
+    visibility: visible;
     transition: all 0.5s ease-in-out !important;
 }
 

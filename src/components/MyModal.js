@@ -5,7 +5,7 @@ import { FaTimes } from 'react-icons/fa'
 
 import '../CSS/mymodal.css'
 
-const MyModal = ({modalId, ProjectName, ProjectLanguages, ProjectPreviewLink, ProjectPreviewLinkName, ProjectGitHubLink, ProjectGitHubLinkName, ProjectImage1, ProjectImage2, ProjectImage3}) => {
+const MyModal = ({ modalId, ProjectName, ProjectLanguages, ProjectPreviewLink, ProjectPreviewLinkName, ProjectGitHubLink, ProjectGitHubLinkName, ProjectImage1, ProjectImage2, ProjectImage3, ProjectInfo, ProjectFigmaLink }) => {
   return (
     <div className='main-modal-backdrop h-100' id={modalId}>
       <div className='mb-3 me-4'>
@@ -20,9 +20,12 @@ const MyModal = ({modalId, ProjectName, ProjectLanguages, ProjectPreviewLink, Pr
                 <h5 className='h6 text-uppercase mt-md-0 mt-3'>Language: <span className='fw-bold ms-3'>{ProjectLanguages}</span></h5>
               </div>
               <div className='ps-md-5 mt-md-0 mt-3 col'>
-                <p className='h6 text-uppercase'>Preview: <a href={ProjectPreviewLink} className='fw-bold text-lowercase text-decoration-none ms-3' target={'_blank'} rel="noreferrer" style={{color: '#93f9c8'}}>{ProjectPreviewLinkName}</a></p>
-                <p className='h6 text-uppercase mt-md-0 mt-3'>GitHub Repo: <a href={ProjectGitHubLink} className='fw-bold text-lowercase text-decoration-none ms-3' target={'_blank'} rel="noreferrer" style={{color: '#93f9c8'}}>{ProjectGitHubLinkName}</a></p>
+                <p className='h6 text-uppercase'>Preview: <a href={ProjectPreviewLink} className='fw-bold text-lowercase text-decoration-none ms-3' target={'_blank'} rel="noreferrer" style={{ color: '#93f9c8' }}>{ProjectPreviewLinkName}</a></p>
+                <p className='h6 text-uppercase mt-md-0 mt-3'>GitHub Repo: <a href={ProjectGitHubLink} className='fw-bold text-lowercase text-decoration-none ms-3' target={'_blank'} rel="noreferrer" style={{ color: '#93f9c8' }}>{ProjectGitHubLinkName}</a></p>
               </div>
+            </div>
+            <div className='col-lg-9 col-sm-11 col-12 m-auto'>
+              <p className=''>{ProjectInfo} <a href={ProjectFigmaLink} target='_blank' rel="noreferrer" >figma link</a></p>
             </div>
             <Carousel className='col-lg-9 col-sm-11 col-12 main-carousel m-auto py-5'>
               <Carousel.Item>
