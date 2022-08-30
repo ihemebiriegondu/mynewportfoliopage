@@ -48,6 +48,11 @@
     color: white;
 }
 
+.projectinfo span {
+    color: white !important;
+    display: inline !important;
+}
+
 .modal-container {
     height: 93%;
     width: 100%;

@@ -108,7 +108,7 @@ function Projects() {
             className="" />
           <MyModal modalId={"modal7"} ProjectName={"Food ordering app"} ProjectLanguages={"ReactJs, css"} ProjectPreviewLink={"https://lilies-react-food-app.netlify.app/"}
             ProjectPreviewLinkName={"lilies food app"} ProjectGitHubLink={"https://github.com/ihemebiriegondu/react-food-app.git"} ProjectGitHubLinkName={"github.com/ihemebiriegondu/react-food-app"} ProjectImage1={foodApp}
-            ProjectImage2={foodApp2} ProjectImage3={foodApp3} ProjectInfo={'My first ReactJS project (a pixel perfect project) built from a '} ProjectFigmaLink={'https://www.figma.com/file/djFiNRn2sxcCUjcWyFs9Y0/Lilies-Food-Place-(Community)-(Copy)-(Copy)?node-id=0%3A1'}
+            ProjectImage2={foodApp2} ProjectImage3={foodApp3} ProjectInfoFirst={'My first ReactJS project (a pixel perfect project) built from a '} ProjectFigmaLink={'https://www.figma.com/file/djFiNRn2sxcCUjcWyFs9Y0/Lilies-Food-Place-(Community)-(Copy)-(Copy)?node-id=0%3A1'} figmatext={"figma link"} ProjectInfoSecond={"Some of its features are: Login and sign up pages, a dashboard that displays all food in the menu, a profile page with changeable profile picture and modals for orders and cart items listing."}
             className="" />
         </div>
       </div>
