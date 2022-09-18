@@ -31,7 +31,6 @@ function About() {
 
               <div className='ms-sm-3'>
                 <p className='text-uppercase fw-bold'>Name: <span className='text-capitalize ms-3'>Egondu Ihemebiri</span></p>
-                <p className='text-uppercase fw-bold'>Age: <span className='text-capitalize ms-3'>20 years</span></p>
                 <p className='text-uppercase fw-bold'>Nationality: <span className='text-capitalize ms-3'>Nigerian</span></p>
                 <p className='text-uppercase fw-bold'>Email: <a href='mailto:ihemebiriegondu@gmail.com' className='text-lowercase ms-3 text-decoration-none'>ihemebiriegondu@gmail.com</a></p>
                 <p className='text-uppercase fw-bold'>Phone: <a href='tel:+2347050286131' className='text-capitalize ms-3 text-decoration-none'>+234 705 028 6131</a></p>
@@ -112,7 +111,7 @@ function About() {
                   <Cards cardTitle={"2022"} cardSubTitle={"FRONTEND DEVELOPER INTERN (HTML, CSS, JS"} CardText={"Worked with my team members in planning website development, converting mockups into useable web presence with HTML, CSS and JavaScript."} />
                 </div>
                 <div className='col'>
-                  <Cards cardTitle={"2022 - PRESENT"} cardSubTitle={"FRONTEND DEVELOPER INTERN (REACT JS)"} CardText={"Currently working with ReactJS to create dynamic webpages and web applications."} />
+                  <Cards cardTitle={"2022"} cardSubTitle={"FRONTEND DEVELOPER INTERN (REACT JS)"} CardText={"Currently working with ReactJS to create dynamic webpages and web applications."} />
                 </div>
               </div>
             </div>
