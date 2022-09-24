@@ -31,10 +31,7 @@ function About() {
 
               <div className='ms-sm-3'>
                 <p className='text-uppercase fw-bold'>Name: <span className='text-capitalize ms-3'>Egondu Ihemebiri</span></p>
-<<<<<<< HEAD
                 {/*<p className='text-uppercase fw-bold'>Age: <span className='text-capitalize ms-3'>20 years</span></p>*/}
-=======
->>>>>>> 4a96203c2a932af2db4fd0edd9f0f9cdf459050c
                 <p className='text-uppercase fw-bold'>Nationality: <span className='text-capitalize ms-3'>Nigerian</span></p>
                 <p className='text-uppercase fw-bold'>Email: <a href='mailto:ihemebiriegondu@gmail.com' className='text-lowercase ms-3 text-decoration-none'>ihemebiriegondu@gmail.com</a></p>
                 <p className='text-uppercase fw-bold'>Phone: <a href='tel:+2347050286131' className='text-capitalize ms-3 text-decoration-none'>+234 705 028 6131</a></p>
@@ -118,11 +115,7 @@ function About() {
                   <Cards cardTitle={"2022"} cardSubTitle={"FRONTEND DEVELOPER INTERN (REACT JS)"} CardText={"I worked with ReactJS to create dynamic webpages and web applications."} />
                 </div>
                 <div className='col'>
-<<<<<<< HEAD
                   <Cards cardTitle={"2022"} cardSubTitle={"FRONTEND DEVELOPER AT SLIMKHALID CONSULTS"} CardText={"Currently working with ReactJS and other Frontend fundamentals to create dynamic web applications for taking quizzes."} />
-=======
-                  <Cards cardTitle={"2022"} cardSubTitle={"FRONTEND DEVELOPER INTERN (REACT JS)"} CardText={"Currently working with ReactJS to create dynamic webpages and web applications."} />
->>>>>>> 4a96203c2a932af2db4fd0edd9f0f9cdf459050c
                 </div>
               </div>
             </div>
