@@ -128,6 +128,17 @@
 
   }
 
+  function openModal8() {
+    const AllModals = document.querySelectorAll("main-modal-backdrop");
+    AllModals.forEach(modal => {
+      modal.classList.remove("active")
+    })
+
+    const modal8 = document.getElementById("modal8");
+    modal8.classList.add("active")
+
+  }
+
   function closeBtnFunction() {
     const modal1 = document.getElementById("modal1");
     modal1.classList.remove("active")
@@ -143,5 +154,7 @@
     modal6.classList.remove("active")
     const modal7 = document.getElementById("modal7");
     modal7.classList.remove("active")
+    const modal8 = document.getElementById("modal8");
+    modal8.classList.remove("active")
   }
 </script>

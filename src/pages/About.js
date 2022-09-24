@@ -31,7 +31,7 @@ function About() {
 
               <div className='ms-sm-3'>
                 <p className='text-uppercase fw-bold'>Name: <span className='text-capitalize ms-3'>Egondu Ihemebiri</span></p>
-                <p className='text-uppercase fw-bold'>Age: <span className='text-capitalize ms-3'>20 years</span></p>
+                {/*<p className='text-uppercase fw-bold'>Age: <span className='text-capitalize ms-3'>20 years</span></p>*/}
                 <p className='text-uppercase fw-bold'>Nationality: <span className='text-capitalize ms-3'>Nigerian</span></p>
                 <p className='text-uppercase fw-bold'>Email: <a href='mailto:ihemebiriegondu@gmail.com' className='text-lowercase ms-3 text-decoration-none'>ihemebiriegondu@gmail.com</a></p>
                 <p className='text-uppercase fw-bold'>Phone: <a href='tel:+2347050286131' className='text-capitalize ms-3 text-decoration-none'>+234 705 028 6131</a></p>
@@ -108,11 +108,14 @@ function About() {
                 <MdWork className='display-4' />
               </div>
               <div className='row row-cols-xl-3 row-cols-md-2 row-cols-1 justify-content-center col-md-12 col-sm-10 m-auto'>
-                <div className='col mb-md-0 mb-5'>
+                <div className='col mb-xl-0 mb-5'>
                   <Cards cardTitle={"2022"} cardSubTitle={"FRONTEND DEVELOPER INTERN (HTML, CSS, JS"} CardText={"Worked with my team members in planning website development, converting mockups into useable web presence with HTML, CSS and JavaScript."} />
                 </div>
+                <div className='col mb-md-0 mb-5'>
+                  <Cards cardTitle={"2022"} cardSubTitle={"FRONTEND DEVELOPER INTERN (REACT JS)"} CardText={"I worked with ReactJS to create dynamic webpages and web applications."} />
+                </div>
                 <div className='col'>
-                  <Cards cardTitle={"2022 - PRESENT"} cardSubTitle={"FRONTEND DEVELOPER INTERN (REACT JS)"} CardText={"Currently working with ReactJS to create dynamic webpages and web applications."} />
+                  <Cards cardTitle={"2022"} cardSubTitle={"FRONTEND DEVELOPER AT SLIMKHALID CONSULTS"} CardText={"Currently working with ReactJS and other Frontend fundamentals to create dynamic web applications for taking quizzes."} />
                 </div>
               </div>
             </div>

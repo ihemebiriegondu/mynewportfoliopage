@@ -23,6 +23,10 @@ import foodApp from '../assests/Projects/food.jpg'
 import foodApp2 from '../assests/Projects/Screenshot 2022-08-30 at 16-59-08 React App.png'
 import foodApp3 from '../assests/Projects/Screenshot 2022-08-30 at 17-05-56 React App.png'
 
+import generalSlimKhalid from '../assests/Projects/flat-devices-mockup.png'
+import slimreview from '../assests/Projects/slimkhalidpreview.png'
+import resultPageKhalid from '../assests/Projects/resultpage.png'
+
 import { RiProjectorFill } from 'react-icons/ri'
 
 
@@ -37,6 +41,12 @@ function Projects() {
         <h5 className='mb-5 fs-6 text-center' style={{ color: '#93f9c8' }}>Some of my recent projects <RiProjectorFill className='ms-2 fs-5 project-icon' /></h5>
         <div className='m-auto col-11'>
           <div className='row row-cols-lg-3 row-cols-md-2 row-cols-1 g-4'>
+            <div className='col'>
+              <div onClick={window['openModal8']}>
+                <ProjectsCard ProjectsCardImage={generalSlimKhalid} ProjectsCardName={"SlimKhalid Test Website"} ProjectPreviewLink={"https://quizzes.slimkhalid.com.ng"}
+                  ProjectGitHubLink={"https://github.com/ihemebiriegondu/slim-khalids-test-site.git"} />
+              </div>
+            </div>
             <div className='col'>
               <div onClick={window['openModal7']}>
                 <ProjectsCard ProjectsCardImage={foodApp} ProjectsCardName={"Food ordering app"} ProjectPreviewLink={"https://lilies-react-food-app.netlify.app/"}
@@ -109,6 +119,10 @@ function Projects() {
           <MyModal modalId={"modal7"} ProjectName={"Food ordering app"} ProjectLanguages={"ReactJs, css"} ProjectPreviewLink={"https://lilies-react-food-app.netlify.app/"}
             ProjectPreviewLinkName={"lilies food app"} ProjectGitHubLink={"https://github.com/ihemebiriegondu/react-food-app.git"} ProjectGitHubLinkName={"github.com/ihemebiriegondu/react-food-app"} ProjectImage1={foodApp}
             ProjectImage2={foodApp2} ProjectImage3={foodApp3} ProjectInfoFirst={'My first ReactJS project (a pixel perfect project) built from a '} ProjectFigmaLink={'https://www.figma.com/file/djFiNRn2sxcCUjcWyFs9Y0/Lilies-Food-Place-(Community)-(Copy)-(Copy)?node-id=0%3A1'} figmatext={"figma link"} ProjectInfoSecond={"Some of its features are: Login and sign up pages, a dashboard that displays all food in the menu, a profile page with changeable profile picture and modals for orders and cart items listing."}
+            className="" />
+          <MyModal modalId={"modal8"} ProjectName={"SlimKhalid Test Website"} ProjectLanguages={"ReactJs, css"} ProjectPreviewLink={"https://quizzes.slimkhalid.com.ng"}
+            ProjectPreviewLinkName={"quizzes.slimkhalid.com.ng"} ProjectGitHubLink={"https://github.com/ihemebiriegondu/slim-khalids-test-site.git"} ProjectGitHubLinkName={"github.com/ihemebiriegondu/slim-khalids-test-site.git"} ProjectImage1={generalSlimKhalid}
+            ProjectImage2={slimreview} ProjectImage3={resultPageKhalid}
             className="" />
         </div>
       </div>
