@@ -114,9 +114,6 @@ function About() {
                 <div className='col mb-md-0 mb-5'>
                   <Cards cardTitle={"2022"} cardSubTitle={"FRONTEND DEVELOPER INTERN (REACT JS)"} CardText={"I worked with ReactJS to create dynamic webpages and web applications."} />
                 </div>
-                <div className='col'>
-                  <Cards cardTitle={"2022"} cardSubTitle={"FRONTEND DEVELOPER AT SLIMKHALID CONSULTS"} CardText={"Currently working with ReactJS and other Frontend fundamentals to create dynamic web applications for taking quizzes."} />
-                </div>
               </div>
             </div>
           </div>
