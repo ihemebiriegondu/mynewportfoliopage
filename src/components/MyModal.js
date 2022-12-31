@@ -33,21 +33,21 @@ const MyModal = ({ modalId, ProjectName, ProjectLanguages, ProjectPreviewLink, P
                 <img
                   className="d-block w-100"
                   src={ProjectImage1}
-                  alt="First slide"
+                  alt=""
                 />
               </Carousel.Item>
               <Carousel.Item>
                 <img
                   className="d-block w-100"
                   src={ProjectImage2}
-                  alt="Second slide"
+                  alt=""
                 />
               </Carousel.Item>
               <Carousel.Item>
                 <img
                   className="d-block w-100"
                   src={ProjectImage3}
-                  alt="Third slide"
+                  alt=""
                 />
               </Carousel.Item>
             </Carousel>

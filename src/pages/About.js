@@ -109,7 +109,7 @@ function About() {
               </div>
               <div className='row row-cols-xl-3 row-cols-md-2 row-cols-1 justify-content-center col-md-12 col-sm-10 m-auto'>
                 <div className='col mb-xl-0 mb-5'>
-                  <Cards cardTitle={"2022"} cardSubTitle={"FRONTEND DEVELOPER INTERN (HTML, CSS, JS"} CardText={"Worked with my team members in planning website development, converting mockups into useable web presence with HTML, CSS and JavaScript."} />
+                  <Cards cardTitle={"2022"} cardSubTitle={"FRONTEND DEVELOPER INTERN (HTML, CSS, JS)"} CardText={"Worked with my team members in planning website development, converting mockups into useable web presence with HTML, CSS and JavaScript."} />
                 </div>
                 <div className='col mb-md-0 mb-5'>
                   <Cards cardTitle={"2022"} cardSubTitle={"FRONTEND DEVELOPER INTERN (REACT JS)"} CardText={"I worked with ReactJS to create dynamic webpages and web applications."} />
