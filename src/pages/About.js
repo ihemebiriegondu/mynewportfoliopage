@@ -3,7 +3,7 @@ import React from 'react'
 import HeaderImg from '../assests/HeaderImg.jpg';
 import Cards from '../components/cards';
 
-import IhemebiriEgonduCV from '../assests/Ihemebiri Egondu .pdf'
+import IhemebiriEgonduCV from '../assests/Ihemebiri Egondu.pdf'
 import { BsFillPersonLinesFill, BsCodeSlash, BsBraces } from 'react-icons/bs'
 import { FaHtml5, FaCss3Alt, FaBootstrap, FaSass, FaReact, FaMusic } from 'react-icons/fa'
 import { BiMoviePlay } from 'react-icons/bi'
