@@ -7,10 +7,7 @@ import '../CSS/mymodal.css'
 
 const MyModal = ({ modalId, ProjectName, ProjectLanguages, ProjectPreviewLink, ProjectPreviewLinkName, ProjectGitHubLink, ProjectGitHubLinkName, ProjectImage1, ProjectImage2, ProjectImage3, ProjectInfoFirst, ProjectFigmaLink, ProjectInfoSecond, figmatext }) => {
   return (
-    <div className='main-modal-backdrop h-100' id={modalId}>
-      <div className='mb-3 me-4'>
-        <FaTimes className='fs-4 closeMark' id='closeBtn' onClick={window['closeBtnFunction']} />
-      </div>
+    <div className='' id={modalId}>
       <div className='main-modal'>
         <div className='modal-container'>
           <div className='modal-carousel-div col-11 m-auto py-5'>

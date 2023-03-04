@@ -25,19 +25,19 @@
 }
 
 .main-modal {
-    background-color: #0c0531;
-    height: 0;
+    background-color: #0c0531 !important;
     width: 100%;
     border-radius: 20px 20px 0 0 !important;
-    transition: all 0.5s ease-in-out !important;
+    overflow-y: scroll !important;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
-.main-modal-backdrop.active .main-modal {
-    height: 93%;
-    transition: all 0.5s ease-in-out !important;
+.main-modal::-webkit-scrollbar {
+    display: none;
 }
 
-.closeMark{
+.closeMark {
     color: rgba(255, 255, 255, 0.8);
     transition: all 0.25s ease-in-out;
 }
@@ -87,11 +87,13 @@
 }
 
 
-.carousel-control-next, .carousel-control-prev {
+.carousel-control-next,
+.carousel-control-prev {
     display: none !important;
 }
 
-.carousel-indicators button, .carousel-indicators [data-bs-target] {
+.carousel-indicators button,
+.carousel-indicators [data-bs-target] {
     outline: none !important;
     border: 0 !important;
     box-shadow: none !important;
