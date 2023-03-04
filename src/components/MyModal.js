@@ -1,8 +1,6 @@
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel';
 
-import { FaTimes } from 'react-icons/fa'
-
 import '../CSS/mymodal.css'
 
 const MyModal = ({ modalId, ProjectName, ProjectLanguages, ProjectPreviewLink, ProjectPreviewLinkName, ProjectGitHubLink, ProjectGitHubLinkName, ProjectImage1, ProjectImage2, ProjectImage3, ProjectInfoFirst, ProjectFigmaLink, ProjectInfoSecond, figmatext }) => {
