@@ -24,10 +24,10 @@ function Navigations() {
                     </span>
                     <Navbar.Collapse>
                         <Nav className="justify-content-center flex-grow-1 pe-3">
-                            <Link id="nav1" onClick={(event) => { setKey('home') }} className={`links navs me-lg-5 mb-lg-0 mb-3 ${key === 'home' ? 'active' : 'not-active'}`} to="/">Home</Link>
-                            <Link id="nav2" onClick={() => { setKey('about') }} className={`links navs me-lg-5 mb-lg-0 mb-3 ${key === 'about' ? 'active' : 'not-active'}`} to="/about">About me</Link>
-                            <Link id="nav3" onClick={() => { setKey('project') }} className={`links navs me-lg-5 mb-lg-0 mb-3 ${key === 'project' ? 'active' : 'not-active'}`} to="/projects">My projects</Link>
-                            <Link id="nav4" onClick={() => { setKey('contact') }} className={`links navs mb-lg-0 mb-5 ${key === 'contact' ? 'active' : 'not-active'}`} to="/contact">Contact me</Link>
+                            <Link id="nav1" onClick={() => { setKey('home'); setShow(false) }} className={`links navs me-lg-5 mb-lg-0 mb-3 ${key === 'home' ? 'active' : 'not-active'}`} to="/">Home</Link>
+                            <Link id="nav2" onClick={() => { setKey('about'); setShow(false) }} className={`links navs me-lg-5 mb-lg-0 mb-3 ${key === 'about' ? 'active' : 'not-active'}`} to="/about">About me</Link>
+                            <Link id="nav3" onClick={() => { setKey('project'); setShow(false) }} className={`links navs me-lg-5 mb-lg-0 mb-3 ${key === 'project' ? 'active' : 'not-active'}`} to="/projects">My projects</Link>
+                            <Link id="nav4" onClick={() => { setKey('contact'); setShow(false) }} className={`links navs mb-lg-0 mb-5 ${key === 'contact' ? 'active' : 'not-active'}`} to="/contact">Contact me</Link>
                         </Nav>
                         <a href="https://www.fiverr.com/share/L0DNY0" target={"_blank"} rel="noreferrer" variant="primary" className="hireMeButton btn px-3 py-2 text-uppercase">Hire Me <BsBriefcaseFill className="ms-3 mb-1" /> </a>
                     </Navbar.Collapse>
@@ -41,10 +41,10 @@ function Navigations() {
                 <Offcanvas.Body className="align-items-center">
                     <SocialIcons SocialIconContainerClass={"home-social-icons-container d-sm-none d-flex"} SocialIconClass={'socialIconsHome'} />
                     <Nav className="justify-content-center flex-grow-1 pe-3 flex flex-column">
-                        <Link id="nav1" onClick={() => { setKey('home') }} className={`links navs me-lg-5 mb-lg-0 mb-3 ${key === 'home' ? 'active' : 'not-active'}`} to="/">Home</Link>
-                        <Link id="nav2" onClick={() => { setKey('about') }} className={`links navs me-lg-5 mb-lg-0 mb-3 ${key === 'about' ? 'active' : 'not-active'}`} to="/about">About me</Link>
-                        <Link id="nav3" onClick={() => { setKey('project') }} className={`links navs me-lg-5 mb-lg-0 mb-3 ${key === 'project' ? 'active' : 'not-active'}`} to="/projects">My projects</Link>
-                        <Link id="nav4" onClick={() => { setKey('contact') }} className={`links navs mb-lg-0 mb-5 ${key === 'contact' ? 'active' : 'not-active'}`} to="/contact">Contact me</Link>
+                        <Link id="nav1" onClick={() => { setKey('home'); setShow(false) }} className={`links navs me-lg-5 mb-lg-0 mb-3 ${key === 'home' ? 'active' : 'not-active'}`} to="/">Home</Link>
+                        <Link id="nav2" onClick={() => { setKey('about'); setShow(false) }} className={`links navs me-lg-5 mb-lg-0 mb-3 ${key === 'about' ? 'active' : 'not-active'}`} to="/about">About me</Link>
+                        <Link id="nav3" onClick={() => { setKey('project'); setShow(false) }} className={`links navs me-lg-5 mb-lg-0 mb-3 ${key === 'project' ? 'active' : 'not-active'}`} to="/projects">My projects</Link>
+                        <Link id="nav4" onClick={() => { setKey('contact'); setShow(false) }} className={`links navs mb-lg-0 mb-5 ${key === 'contact' ? 'active' : 'not-active'}`} to="/contact">Contact me</Link>
                     </Nav>
                     <a href="https://www.fiverr.com/share/L0DNY0" target={"_blank"} rel="noreferrer" variant="primary" className="hireMeButton btn px-3 py-2 text-uppercase">Hire Me <BsBriefcaseFill className="ms-3 mb-1" /> </a>
                 </Offcanvas.Body>
