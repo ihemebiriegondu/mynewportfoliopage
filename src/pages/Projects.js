@@ -5,10 +5,7 @@ import Offcanvas from 'react-bootstrap/Offcanvas'
 
 import allgraphicsdesignpage from '../assests/Projects/all graphics design page.png'
 import graphicAll from '../assests/Projects/collage 3.png'
-import allslanttravelpage from '../assests/Projects/all slant travel page.png'
-import phoneTravel from '../assests/Projects/travel small.png'
 import allportfoliopage from '../assests/Projects/all portfolio page.png'
-import allTravel from '../assests//Projects/all travel page.jpg'
 import calculatorDark from '../assests/Projects/Calculator dark.png'
 import url2 from '../assests/Projects/url home (2).png'
 import url3 from '../assests/Projects/url home (3).png'
@@ -19,6 +16,9 @@ import portfolioTop from '../assests/Projects/Screenshot 2022-07-16 at 22-05-42 
 import calculator from '../assests/Projects/calculator.png'
 import collage from '../assests/Projects/collage.png'
 import collage2 from '../assests/Projects/collage2.png'
+import designoPreview1 from '../assests/Projects/preview.jpg'
+import designoPreview2 from '../assests/Projects/3-devices-black.png'
+import designoPreview3 from '../assests/Projects/all-devices-black.png'
 
 import foodApp from '../assests/Projects/food.jpg'
 import foodApp2 from '../assests/Projects/Screenshot 2022-08-30 at 16-59-08 React App.png'
@@ -48,7 +48,7 @@ function Projects() {
     { Title: 'SlimKhalid Test Website', DisplayImage: generalSlimKhalid, ProjectLanguages: "ReactJs, css", relatedImage1: slimreview, relatedImage2: resultPageKhalid, previewLink: 'https://quizzes.slimkhalid.com.ng', githubLink: 'https://github.com/ihemebiriegondu/slim-khalids-test-site.git' },
     { Title: 'Lillies Food Web App', DisplayImage: foodApp, relatedImage1: foodApp2, ProjectLanguages: "ReactJs, css", relatedImage2: foodApp3, previewLink: 'https://lilies-react-food-app.netlify.app/', githubLink: 'https://github.com/ihemebiriegondu/react-food-app.git' },
     { Title: 'Graphics designer\'s portfolio page', DisplayImage: allgraphicsdesignpage, ProjectLanguages: "HTML, Bootstrap, SCSS, JS", relatedImage1: graphicAll, relatedImage2: allgraphicsdesignpage, previewLink: 'https://graphizdemo.egondu-ihemebiri.com/', githubLink: 'https://github.com/ihemebiriegondu/Graphics-Designer-theme' },
-    { Title: 'Holidayz travel page', DisplayImage: allslanttravelpage, relatedImage1: '', ProjectLanguages: "HTML, Bootstrap, CSS, JS", relatedImage2: allTravel, previewLink: phoneTravel, githubLink: 'https://github.com/ihemebiriegondu/same-travel-page.git' },
+    { Title: 'Designo multi-page Website', DisplayImage: designoPreview1, relatedImage1: designoPreview2, ProjectLanguages: "Nextjs, tailwind", relatedImage2: designoPreview3, previewLink: 'https://designo-multipage-gamma.vercel.app/', githubLink: 'https://github.com/tomcodes90/designo-multipage' },
     { Title: 'My portfolio page V1.0', DisplayImage: allportfoliopage, ProjectLanguages: "html, css, scss, bootstrap, js", relatedImage1: portfolioTop, relatedImage2: portfolioBottom, previewLink: 'https://egonduihemebiri.netlify.app/', githubLink: 'https://github.com/ihemebiriegondu/EGO.git' },
     { Title: 'My Basic calculator', DisplayImage: calculator, ProjectLanguages: "HTML, CSS, JS", relatedImage1: calculatorDark, relatedImage2: calculator, previewLink: 'https://ego-simple-calculator.netlify.app/', githubLink: 'https://github.com/ihemebiriegondu/My-Simple-Calculator' },
     { Title: 'Link shortener page', DisplayImage: collage, ProjectLanguages: "HTML,CSS, JS", relatedImage1: url2, relatedImage2: url3, previewLink: 'https://elide-link-shortener.netlify.app/', githubLink: 'https://github.com/ihemebiriegondu/URL-Shortener' },

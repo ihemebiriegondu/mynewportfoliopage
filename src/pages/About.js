@@ -7,7 +7,7 @@ import IhemebiriEgonduCV from '../assests/Ihemebiri Egondu.pdf'
 import { BsFillPersonLinesFill, BsCodeSlash, BsBraces } from 'react-icons/bs'
 import { FaHtml5, FaCss3Alt, FaBootstrap, FaSass, FaReact, FaMusic } from 'react-icons/fa'
 import { BiMoviePlay } from 'react-icons/bi'
-import { SiJavascript } from 'react-icons/si'
+import { SiJavascript, SiTailwindcss } from 'react-icons/si'
 import { MdWork } from 'react-icons/md'
 import { IoFastFoodSharp } from 'react-icons/io5'
 import { IoMdDownload } from 'react-icons/io'
@@ -86,6 +86,10 @@ function About() {
                 <div className='d-flex align-items-center justify-content-between mb-3 me-xxl-5'>
                   <p className='text-uppercase fw-bold'>ReactJs</p>
                   <FaReact className='mb-1 aboutme-icons me-xxl-5 display-4 border-0 rounded-0' />
+                </div>
+                <div className='d-flex align-items-center justify-content-between mb-3 me-xxl-5'>
+                  <p className='text-uppercase fw-bold'>Tailwind</p>
+                  <SiTailwindcss className='mb-1 aboutme-icons me-xxl-5 display-4 border-0 rounded-0' />
                 </div>
               </div>
             </div>
