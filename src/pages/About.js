@@ -88,7 +88,7 @@ function About() {
                   <FaReact className='mb-1 aboutme-icons me-xxl-5 display-4 border-0 rounded-0' />
                 </div>
                 <div className='d-flex align-items-center justify-content-between mb-3 me-xxl-5'>
-                  <p className='text-uppercase fw-bold'>Tailwind</p>
+                  <p className='text-uppercase fw-bold'>TailwindCSS</p>
                   <SiTailwindcss className='mb-1 aboutme-icons me-xxl-5 display-4 border-0 rounded-0' />
                 </div>
               </div>
