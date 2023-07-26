@@ -22,9 +22,10 @@ import foodApp from '../assests/Projects/food.jpg'
 import foodApp2 from '../assests/Projects/Screenshot 2022-08-30 at 16-59-08 React App.png'
 import foodApp3 from '../assests/Projects/Screenshot 2022-08-30 at 17-05-56 React App.png'
 
-import generalSlimKhalid from '../assests/Projects/flat-devices-mockup.png'
-import slimreview from '../assests/Projects/slimkhalidpreview.png'
-import resultPageKhalid from '../assests/Projects/resultpage.png'
+import steafastelearningMulti from '../assests/Projects/steadfastelearning-milti screens.png' 
+import steafastelearningMulti2 from '../assests/Projects/elearning3-devices-black.png' 
+import steafastelearninglaptop from '../assests/Projects/screencapture-steadfastprivateschool-elearning-netlify-app-practice-questions-2023-07-26-18_19_08.png' 
+
 
 import groupNetflix from '../assests/Projects/3-devices-white.png'
 import netflixHome from '../assests/Projects/group2.png'
@@ -48,7 +49,7 @@ function Projects() {
 
   const projects = [
     { Title: 'Netflix website clone', DisplayImage: groupNetflix, ProjectLanguages: "NextJs, tailwindcss", relatedImage1: netflixHome, relatedImage2: netflixSignUp, previewLink: 'https://ego-netflix-clone.netlify.app/', githubLink: 'https://github.com/ihemebiriegondu/netflix-clone' },
-    { Title: 'SlimKhalid Test Website', DisplayImage: generalSlimKhalid, ProjectLanguages: "ReactJs, css", relatedImage1: slimreview, relatedImage2: resultPageKhalid, previewLink: 'https://quizzes.slimkhalid.com.ng', githubLink: 'https://github.com/ihemebiriegondu/slim-khalids-test-site.git' },
+    { Title: 'Steadfast School E-learning web app', DisplayImage: steafastelearningMulti, ProjectLanguages: "ReactJs, ReactBootstrap, Firebase, Axios", relatedImage1: steafastelearningMulti2, relatedImage2: steafastelearninglaptop, previewLink: 'https://steadfastprivateschool-elearning.netlify.app/', githubLink: 'https://github.com/ihemebiriegondu/steadfast-elearning.git' },
     { Title: 'Lillies Food Web App', DisplayImage: foodApp, relatedImage1: foodApp2, ProjectLanguages: "ReactJs, css", relatedImage2: foodApp3, previewLink: 'https://lilies-react-food-app.netlify.app/', githubLink: 'https://github.com/ihemebiriegondu/react-food-app.git' },
     { Title: 'Graphics designer\'s portfolio page', DisplayImage: allgraphicsdesignpage, ProjectLanguages: "HTML, Bootstrap, SCSS, JS", relatedImage1: graphicAll, relatedImage2: allgraphicsdesignpage, previewLink: 'https://graphizdemo.egondu-ihemebiri.com/', githubLink: 'https://github.com/ihemebiriegondu/Graphics-Designer-theme' },
     { Title: 'Designo multi-page Website', DisplayImage: designoPreview1, relatedImage1: designoPreview2, ProjectLanguages: "Nextjs, tailwindcss", relatedImage2: designoPreview3, previewLink: 'https://designo-multipage-gamma.vercel.app/', githubLink: 'https://github.com/tomcodes90/designo-multipage' },

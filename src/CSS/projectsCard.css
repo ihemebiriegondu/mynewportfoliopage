@@ -3,6 +3,7 @@
     position: relative;
     border: 0 !important;
     transition: all 0.5s ease-in-out;
+    background-color: #bad0cc;
 }
 
 .projectcardbody {
@@ -10,6 +11,7 @@
     width: 100%;
     overflow: hidden;
     transition: all 0.5s ease-in-out;
+    background-color: #bad0cc;
 }
 
 .cardTag {
@@ -31,7 +33,7 @@
 .projectcardbodyImg img {
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
     transition: all 0.5s ease-in-out;
 }
 

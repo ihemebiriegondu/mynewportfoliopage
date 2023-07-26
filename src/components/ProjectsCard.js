@@ -7,11 +7,6 @@ const ProjectsCard = ({ ProjectsCardImage, ProjectsCardName, ProjectPreviewLink,
     return (
         <Card className="shadow p-0 projectcard" style={{ height: '20rem' }}>
             <Card.Body className='p-0 projectcardbody'>
-                {/*-
-                <div className='cardTag rounded-pill'>
-                    <p>CASE STUDY</p>
-                </div>
-                */}
                 <div className='projectcardbodyImg'>
                     <img src={ProjectsCardImage} alt='project 1 img' />
                 </div>
