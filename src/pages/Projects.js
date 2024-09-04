@@ -5,31 +5,19 @@ import Offcanvas from 'react-bootstrap/Offcanvas'
 
 import allgraphicsdesignpage from '../assests/Projects/all graphics design page.png'
 import graphicAll from '../assests/Projects/collage 3.png'
-import calculatorDark from '../assests/Projects/Calculator dark.png'
-import url2 from '../assests/Projects/url home (2).png'
-import url3 from '../assests/Projects/url home (3).png'
-import piggyBottom from '../assests/Projects/Screenshot 2022-07-15 at 14-00-48 Invest in bits and on the go with Investify - PiggyVest bottom.png'
-import piggyTop from '../assests/Projects/Screenshot 2022-07-15 at 14-00-48 Invest in bits and on the go with Investify - PiggyVest top.png'
-import calculator from '../assests/Projects/calculator.png'
-import collage from '../assests/Projects/collage.png'
-import collage2 from '../assests/Projects/collage2.png'
 
 import designoPreview1 from '../assests/Projects/preview.jpg'
 import designoPreview2 from '../assests/Projects/3-devices-black.png'
 import designoPreview3 from '../assests/Projects/all-devices-black.png'
-
-import foodApp from '../assests/Projects/food.jpg'
-import foodApp2 from '../assests/Projects/Screenshot 2022-08-30 at 16-59-08 React App.png'
-import foodApp3 from '../assests/Projects/Screenshot 2022-08-30 at 17-05-56 React App.png'
 
 import steafastelearningMulti from '../assests/Projects/steadfastelearning-milti screens.png' 
 import steafastelearningMulti2 from '../assests/Projects/elearning3-devices-black.png' 
 import steafastelearninglaptop from '../assests/Projects/screencapture-steadfastprivateschool-elearning-netlify-app-practice-questions-2023-07-26-18_19_08.png' 
 
 
-import groupNetflix from '../assests/Projects/3-devices-white.png'
-import netflixHome from '../assests/Projects/group2.png'
-import netflixSignUp from '../assests/Projects/screencapture-netflix-clone-mu-liart-vercel-app-signIn-2023-03-11-20_00_40.png'
+import calcGif from '../assests/Projects/calcgif.gif'
+import calcCover from '../assests/Projects/calcimgwvalue.png'
+import calcthird from '../assests/Projects/Screenshot_20240904-222734.jpg'
 
 import { RiProjectorFill } from 'react-icons/ri'
 
@@ -48,14 +36,10 @@ function Projects() {
   const [offcanvasGithub, setOffcanvasGithub] = useState('');
 
   const projects = [
-    { Title: 'Netflix website clone', DisplayImage: groupNetflix, ProjectLanguages: "NextJs, tailwindcss", relatedImage1: netflixHome, relatedImage2: netflixSignUp, previewLink: 'https://ego-netflix-clone.netlify.app/', githubLink: 'https://github.com/ihemebiriegondu/netflix-clone' },
-    { Title: 'Steadfast School E-learning web app', DisplayImage: steafastelearningMulti, ProjectLanguages: "ReactJs, ReactBootstrap, Firebase, Axios", relatedImage1: steafastelearningMulti2, relatedImage2: steafastelearninglaptop, previewLink: 'https://steadfastprivateschool-elearning.netlify.app/', githubLink: 'https://github.com/ihemebiriegondu/steadfast-elearning.git' },
-    { Title: 'Lillies Food Web App', DisplayImage: foodApp, relatedImage1: foodApp2, ProjectLanguages: "ReactJs, css", relatedImage2: foodApp3, previewLink: 'https://lilies-react-food-app.netlify.app/', githubLink: 'https://github.com/ihemebiriegondu/react-food-app.git' },
-    { Title: 'Graphics designer\'s portfolio page', DisplayImage: allgraphicsdesignpage, ProjectLanguages: "HTML, Bootstrap, SCSS, JS", relatedImage1: graphicAll, relatedImage2: allgraphicsdesignpage, previewLink: 'https://graphizdemo.egondu-ihemebiri.com/', githubLink: 'https://github.com/ihemebiriegondu/Graphics-Designer-theme' },
+    { Title: 'Steadfast School E-learning web app', DisplayImage: steafastelearningMulti, ProjectLanguages: "ReactJs, ReactBootstrap, Firebase, Axios", relatedImage1: steafastelearningMulti2, relatedImage2: steafastelearninglaptop, previewLink: 'https://steadfast-elearning.vercel.app/', githubLink: 'https://github.com/ihemebiriegondu/steadfast-elearning.git' },
+    { Title: 'Calculator App', DisplayImage: calcCover, ProjectLanguages: "HTML, CSS, JS", relatedImage1: calcGif, relatedImage2: calcthird, previewLink: 'https://ego-calculator-app.vercel.app/', githubLink: 'https://github.com/ihemebiriegondu/calculator-app.git' },
+    { Title: 'Graphics designer\'s portfolio page', DisplayImage: allgraphicsdesignpage, ProjectLanguages: "HTML, Bootstrap, SCSS, JS", relatedImage1: graphicAll, relatedImage2: allgraphicsdesignpage, previewLink: 'https://graphics-designer-theme.vercel.app/', githubLink: 'https://github.com/ihemebiriegondu/Graphics-Designer-theme' },
     { Title: 'Designo multi-page Website', DisplayImage: designoPreview1, relatedImage1: designoPreview2, ProjectLanguages: "Nextjs, tailwindcss", relatedImage2: designoPreview3, previewLink: 'https://designo-multipage-gamma.vercel.app/', githubLink: 'https://github.com/tomcodes90/designo-multipage' },
-    { Title: 'My Basic calculator', DisplayImage: calculator, ProjectLanguages: "HTML, CSS, JS", relatedImage1: calculatorDark, relatedImage2: calculator, previewLink: 'https://ego-simple-calculator.netlify.app/', githubLink: 'https://github.com/ihemebiriegondu/My-Simple-Calculator' },
-    { Title: 'Link shortener page', DisplayImage: collage, ProjectLanguages: "HTML,CSS, JS", relatedImage1: url2, relatedImage2: url3, previewLink: 'https://elide-link-shortener.netlify.app/', githubLink: 'https://github.com/ihemebiriegondu/URL-Shortener' },
-    { Title: 'PiggyVest website clone', DisplayImage: collage2, ProjectLanguages: "HTML, Bootstrap, CSS, JS", relatedImage1: piggyTop, relatedImage2: piggyBottom, previewLink: 'https://piggy-clone.netlify.app/', githubLink: 'https://github.com/ihemebiriegondu/PiggyVest-Clone' }
   ]
 
   const showModal = (event) => {
@@ -112,5 +96,5 @@ function Projects() {
     </div>
   )
 }
-
+//#c3dcd8
 export default Projects
