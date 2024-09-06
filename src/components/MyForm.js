@@ -1,13 +1,19 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button';
+import { useForm } from '@formspree/react';
 
 import { IoIosSend } from 'react-icons/io'
 
 import '../CSS/form.css'
 
 const MyForm = () => {
+    const [state, handleSubmit] = useForm("mzzpwkjz");
+    if (state.succeeded) {
+        document.getElementById('contact-form').reset()
+    }
+
     return (
-        <form name='ContactMeForm' method='post'>
+        <form name='ContactMeForm' method='post' id='contact-form' onSubmit={handleSubmit}>
             <input type="hidden" name="form-name" value="ContactMeForm" />
             <div className="mb-3 d-flex flex-column">
                 <label htmlFor='name' className="form-label">Name</label>
@@ -21,12 +27,12 @@ const MyForm = () => {
 
             <div className="mb-3 d-flex flex-column">
                 <label htmlFor='number' className="form-label">Phone number</label>
-                <input type={'tel'} name='Phone number' id='number' className='form-input shadow form-control-lg' required />
+                <input type={'tel'} name='Phone number' id='number' className='form-input shadow form-control-lg' />
             </div>
 
             <div className="mb-3 d-flex flex-column">
                 <label htmlFor='message' className="form-label">Message</label>
-                <textarea rows={'5'} placeholder='Your message' name='Message' id='message' className='form-message px-3 pt-2 shadow'></textarea>
+                <textarea rows={'5'} placeholder='Your message' name='Message' id='message' className='form-message px-3 pt-2 shadow' required></textarea>
             </div>
 
             {/*<div className="mb-3 form-check d-flex" required>
@@ -34,7 +40,7 @@ const MyForm = () => {
                 <label htmlFor='checkbox' className='ms-3'>I'm not a robot</label>
     </div>*/}
             
-            <Button variant="primary" type="submit" className="py-3 px-3 fw-bold mb-0 about-button mt-2 w-100">SUBMIT <IoIosSend className='fs-3 ms-3' /> </Button>
+            <Button variant="primary" type="submit" disabled={state.submitting} className="py-3 px-3 fw-bold mb-0 about-button mt-2 w-100">SUBMIT <IoIosSend className='fs-3 ms-3' /> </Button>
         </form>
     )
 }
