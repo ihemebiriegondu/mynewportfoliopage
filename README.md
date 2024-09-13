@@ -8,6 +8,7 @@
 **Technologies used**:
   - React JS
   - TailwindCSS
+  - Firebase
   - Vercel (Hosting)
 
 **Get in touch**:
