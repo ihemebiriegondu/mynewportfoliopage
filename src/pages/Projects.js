@@ -1,32 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { database } from "../firebase";
+import { collection, getDocs, orderBy, query } from "firebase/firestore";
+
 import ProjectsCard from "../components/ProjectsCard";
 import MyModal from "../components/MyModal";
 import Offcanvas from "react-bootstrap/Offcanvas";
-
-import allgraphicsdesignpage from "../assests/Projects/all graphics design page.png";
-import graphicAll from "../assests/Projects/collage 3.png";
-
-import designoPreview1 from "../assests/Projects/preview.jpg";
-import designoPreview2 from "../assests/Projects/3-devices-black.png";
-import designoPreview3 from "../assests/Projects/all-devices-black.png";
-
-import steafastelearningMulti from "../assests/Projects/steadfastelearning-milti screens.png";
-import steafastelearningMulti2 from "../assests/Projects/elearning3-devices-black.png";
-import steafastelearninglaptop from "../assests/Projects/screencapture-steadfastprivateschool-elearning-netlify-app-practice-questions-2023-07-26-18_19_08.png";
-
-import calcGif from "../assests/Projects/calcgif.gif";
-import calcCover from "../assests/Projects/calcimgwvalue.png";
-import calcthird from "../assests/Projects/Screenshot_20240904-222734.jpg";
-
-import spshero from "../assests/Projects/steadfast/responsive mockup.jpg";
-import spshome from "../assests/Projects/steadfast/Group 1.png";
-import spsadmin from "../assests/Projects/steadfast/Thumbnail (1).png";
 
 import { RiProjectorFill } from "react-icons/ri";
 
 import "../CSS/projects.css";
 
 function Projects() {
+  const [projectDatas, setProjectDatas] = useState([]);
   const [show, setShow] = useState(false);
   const [offcanvasTitle, setOffcanvasTitle] = useState("");
   const [offcanvasDisplayImage, setOffcanvasDisplayImage] = useState("");
@@ -36,54 +21,19 @@ function Projects() {
   const [offcanvasPreview, setOffcanvasPreview] = useState("");
   const [offcanvasGithub, setOffcanvasGithub] = useState("");
 
-  const projects = [
-    {
-      Title: "Steadfast Private Schools Website",
-      DisplayImage: spshero,
-      ProjectLanguages: "HTML, Bootstrap, JS",
-      relatedImage1: spshome,
-      relatedImage2: spsadmin,
-      previewLink: "https://steadfast-private-school.vercel.app/",
-      githubLink:
-        "https://github.com/ihemebiriegondu/SteadFast-Official-Website.git",
-    },
-    {
-      Title: "Calculator App",
-      DisplayImage: calcCover,
-      ProjectLanguages: "HTML, CSS, JS",
-      relatedImage1: calcGif,
-      relatedImage2: calcthird,
-      previewLink: "https://ego-calculator-app.vercel.app/",
-      githubLink: "https://github.com/ihemebiriegondu/calculator-app.git",
-    },
-    {
-      Title: "Steadfast School E-learning web app",
-      DisplayImage: steafastelearningMulti,
-      ProjectLanguages: "ReactJs, ReactBootstrap, Firebase, Axios",
-      relatedImage1: steafastelearningMulti2,
-      relatedImage2: steafastelearninglaptop,
-      previewLink: "https://steadfast-elearning.vercel.app/",
-      githubLink: "https://github.com/ihemebiriegondu/steadfast-elearning.git",
-    },
-    {
-      Title: "Graphics designer's portfolio page",
-      DisplayImage: allgraphicsdesignpage,
-      ProjectLanguages: "HTML, Bootstrap, SCSS, JS",
-      relatedImage1: graphicAll,
-      relatedImage2: allgraphicsdesignpage,
-      previewLink: "https://graphics-designer-theme.vercel.app/",
-      githubLink: "https://github.com/ihemebiriegondu/Graphics-Designer-theme",
-    },
-    {
-      Title: "Designo multi-page Website",
-      DisplayImage: designoPreview1,
-      relatedImage1: designoPreview2,
-      ProjectLanguages: "Nextjs, tailwindcss",
-      relatedImage2: designoPreview3,
-      previewLink: "https://designo-multipage-gamma.vercel.app/",
-      githubLink: "https://github.com/tomcodes90/designo-multipage",
-    },
-  ];
+  useEffect(() => {
+    const projectCol = collection(database, "projects");
+    const queryProjects = query(projectCol, orderBy("importance", "asc"));
+
+    getDocs(queryProjects)
+      .then((snapshot) => {
+        const data = snapshot.docs.map((doc) => doc.data());
+        setProjectDatas(data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
 
   const showModal = (event) => {
     let targets = event.target;
@@ -133,7 +83,7 @@ function Projects() {
         </h5>
         <div className="m-auto col-11">
           <div className="row row-cols-lg-3 row-cols-md-2 row-cols-1 g-4">
-            {projects.map((project, i) => (
+            {projectDatas.map((project, i) => (
               <div className="col" key={i}>
                 <div
                   onClick={(event) => {

@@ -12,7 +12,7 @@ const MyModal = ({ modalId, ProjectName, ProjectLanguages, ProjectPreviewLink, P
             <div className='col-lg-9 col-sm-11 col-12 row row-cols-md-2 row-cols-1 m-auto justify-content-between flex-wrap mb-4'>
               <div className='col'>
                 <h5 className='h6 text-uppercase'>Project Name: <span className='fw-bold ms-3'>{ProjectName}</span></h5>
-                <h5 className='h6 text-uppercase mt-md-0 mt-3'>Language: <span className='fw-bold ms-3'>{ProjectLanguages}</span></h5>
+                <h5 className='h6 text-uppercase mt-md-0 mt-3'>Built With: <span className='fw-bold ms-3'>{ProjectLanguages}</span></h5>
               </div>
               <div className='ps-md-5 mt-md-0 mt-3 col'>
                 <p className='h6 text-uppercase'>Preview: <a href={ProjectPreviewLink} className='fw-bold text-lowercase text-decoration-none ms-3' target={'_blank'} rel="noreferrer" style={{ color: '#93f9c8' }}>{ProjectPreviewLinkName}</a></p>
