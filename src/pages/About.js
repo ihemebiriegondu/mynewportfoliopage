@@ -1,130 +1,234 @@
-import React from 'react'
+import React from "react";
 
-import HeaderImg from '../assests/HeaderImg.jpg';
-import Cards from '../components/cards';
+import HeaderImg from "../assests/HeaderImg.jpg";
+import Cards from "../components/cards";
 
-import IhemebiriEgonduCV from '../assests/Egonduihemebiri.pdf'
-import { BsFillPersonLinesFill, BsCodeSlash, BsBraces } from 'react-icons/bs'
-import { FaHtml5, FaCss3Alt, FaBootstrap, FaSass, FaReact, FaMusic } from 'react-icons/fa'
-import { BiMoviePlay } from 'react-icons/bi'
-import { SiJavascript, SiTailwindcss } from 'react-icons/si'
-import { MdWork } from 'react-icons/md'
-import { IoFastFoodSharp } from 'react-icons/io5'
-import { IoMdDownload } from 'react-icons/io'
-import { GiGraduateCap } from 'react-icons/gi'
+import IhemebiriEgonduCV from "../assests/EgonduIhemebiri.pdf";
+import { BsFillPersonLinesFill, BsCodeSlash, BsBraces } from "react-icons/bs";
+import { FaSass, FaReact, FaMusic } from "react-icons/fa";
+import { SiNextdotjs } from "react-icons/si";
+import { BiMoviePlay, BiLogoTypescript } from "react-icons/bi";
+import { SiJavascript, SiTailwindcss } from "react-icons/si";
+import { MdWork } from "react-icons/md";
+import { IoFastFoodSharp } from "react-icons/io5";
+import { IoMdDownload } from "react-icons/io";
+import { GiGraduateCap } from "react-icons/gi";
 
-import '../CSS/about.css'
+import "../CSS/about.css";
 
 function About() {
+  const experiences = [
+    {
+      title: "July 2025 - Present",
+      subTitle: "Frontend developer - Errandify",
+      text: `Solely developed and maintained the frontend of Errandify’s platform using Next.js, TypeScript, and TailwindCSS.
+      
+      Collaborated with backend developers to integrate APIs and deliver a responsive, scalable, and user-friendly interface.
+      
+      Solely developed and maintained the frontend of Errandify’s platform using Next.js, TypeScript, and TailwindCSS. `
+    },
+    {
+      title: "Jan 2025 - Present",
+      subTitle: "Junior frontend developer - AsoebiAfrica",
+      text: `Built and maintained user interfaces for Asoebi Africa’s platform using Next.js and TailwindCSS. 
+      
+      Collaborated closely with designers, backend developers and fellow frontend developers to improve product quality and user experience.
+      
+      Built and maintained user interfaces for Asoebi Africa’s platform using Next.js and TailwindCSS. `
+    },
+    {
+      title: "Oct 2024 - Dec 2024",
+      subTitle: "Frontend developer intern - AsoebiAfrica",
+      text: `Assisted in developing and optimizing frontend components using Next.js.
+      
+      Gained hands-on experience with TypeScript and Next.js in a production environment.`
+    },
+    {
+      title: "Sept 2022",
+      subTitle: "Frontend developer intern - SideHustle",
+      text: "I worked with ReactJS to create dynamic webpages and web applications."
+    },
+    {
+      title: "May 2022",
+      subTitle: "Frontend developer intern - SideHustle",
+      text: "Worked with my team members in planning website development, converting mockups into useable web presence with HTML, CSS and JavaScript."
+    }
+  ];
+
   return (
-    <div className='mainAbout'>
-      <div className='col-12 mainAboutDiv'>
+    <div className="mainAbout">
+      <div className="col-12 mainAboutDiv">
         <div>
-          <div className='d-flex justify-content-center'>
-            <div className='about-img-sub-div'><img src={HeaderImg} alt="hero img" className='about-img' /></div>
+          <div className="d-flex justify-content-center">
+            <div className="about-img-sub-div">
+              <img src={HeaderImg} alt="hero img" className="about-img" />
+            </div>
           </div>
-          <div className='row row-cols-lg-2 g-5 mt-5 col-sm-10 col-12 m-auto'>
-            <div className=''>
-              <div className='shadow skillsAndabout py-2 px-3 mb-4'>
-                <h5 className='text-uppercase h4'>About Me <BsFillPersonLinesFill className='mb-1 ms-3 aboutme-icons border-0 rounded-0' /></h5>
+          <div className="row row-cols-lg-2 g-5 mt-5 col-sm-10 col-12 m-auto">
+            <div className="">
+              <div className="shadow skillsAndabout py-2 px-3 mb-4">
+                <h5 className="text-uppercase h4">
+                  About Me{" "}
+                  <BsFillPersonLinesFill className="mb-1 ms-3 aboutme-icons border-0 rounded-0" />
+                </h5>
               </div>
 
-              <div className='ms-sm-3'>
-                <p className='text-uppercase fw-bold'>Name: <span className='text-capitalize ms-3'>Egondu Ihemebiri</span></p>
+              <div className="ms-sm-3">
+                <p className="text-uppercase fw-bold">
+                  Name:{" "}
+                  <span className="text-capitalize ms-3">Egondu Ihemebiri</span>
+                </p>
                 {/*<p className='text-uppercase fw-bold'>Age: <span className='text-capitalize ms-3'>20 years</span></p>*/}
-                <p className='text-uppercase fw-bold'>Nationality: <span className='text-capitalize ms-3'>Nigerian</span></p>
-                <p className='text-uppercase fw-bold'>Email: <a href='mailto:ihemebiriegondu@gmail.com' className='text-lowercase ms-3 text-decoration-none'>ihemebiriegondu@gmail.com</a></p>
-                <p className='text-uppercase fw-bold'>Phone: <a href='tel:+2347050286131' className='text-capitalize ms-3 text-decoration-none'>+234 705 028 6131</a></p>
-                <p className='text-uppercase fw-bold'>Languages: <span className='text-capitalize ms-3'>English</span></p>
+                <p className="text-uppercase fw-bold">
+                  Nationality:{" "}
+                  <span className="text-capitalize ms-3">Nigerian</span>
+                </p>
+                <p className="text-uppercase fw-bold">
+                  Email:{" "}
+                  <a
+                    href="mailto:ihemebiriegondu@gmail.com"
+                    className="text-lowercase ms-3 text-decoration-none"
+                  >
+                    ihemebiriegondu@gmail.com
+                  </a>
+                </p>
+                <p className="text-uppercase fw-bold">
+                  Phone:{" "}
+                  <a
+                    href="tel:+2347050286131"
+                    className="text-capitalize ms-3 text-decoration-none"
+                  >
+                    +234 903 177 1297
+                  </a>
+                </p>
+                <p className="text-uppercase fw-bold">
+                  Languages:{" "}
+                  <span className="text-capitalize ms-3">English</span>
+                </p>
                 <div>
-                  <h6 className='text-uppercase text-center mt-4 h6'>My Interest</h6>
-                  <div className='d-flex align-items-center justify-content-center mt-4'>
-                    <div className='py-sm-3 py-2 px-sm-3 px-2 aboutme-icons-div text-center me-sm-5 me-4'>
-                      <FaMusic className='aboutme-icons h4 p-0 m-0 mb-0' />
+                  <h6 className="text-uppercase text-center mt-4 h6">
+                    My Interest
+                  </h6>
+                  <div className="d-flex align-items-center justify-content-center mt-4">
+                    <div className="py-sm-3 py-2 px-sm-3 px-2 aboutme-icons-div text-center me-sm-5 me-4">
+                      <FaMusic className="aboutme-icons h4 p-0 m-0 mb-0" />
                     </div>
-                    <div className='py-sm-3 py-2 px-sm-3 px-2 aboutme-icons-div text-center me-sm-5 me-4'>
-                      <BiMoviePlay className='aboutme-icons h4 p-0 m-0 mb-0' />
+                    <div className="py-sm-3 py-2 px-sm-3 px-2 aboutme-icons-div text-center me-sm-5 me-4">
+                      <BiMoviePlay className="aboutme-icons h4 p-0 m-0 mb-0" />
                     </div>
-                    <div className='py-sm-3 py-2 px-sm-3 px-2 aboutme-icons-div text-center me-sm-5 me-4'>
-                      <IoFastFoodSharp className='aboutme-icons h4 p-0 m-0 mb-0' />
+                    <div className="py-sm-3 py-2 px-sm-3 px-2 aboutme-icons-div text-center me-sm-5 me-4">
+                      <IoFastFoodSharp className="aboutme-icons h4 p-0 m-0 mb-0" />
                     </div>
-                    <div className='py-sm-3 py-2 px-sm-3 px-2 aboutme-icons-div text-center'>
-                      <BsBraces className='aboutme-icons h4 p-0 m-0 mb-0' />
+                    <div className="py-sm-3 py-2 px-sm-3 px-2 aboutme-icons-div text-center">
+                      <BsBraces className="aboutme-icons h4 p-0 m-0 mb-0" />
                     </div>
                   </div>
-                  <div className=''>
-                    <a href={IhemebiriEgonduCV} target={'_blank'} rel="noreferrer" download variant="primary" className="py-3 btn px-3 fw-bold mb-0 about-button mt-5 text-decoration-none">DOWNLOAD CV <IoMdDownload className='fs-3' /> </a>
+                  <div className="">
+                    <a
+                      href={IhemebiriEgonduCV}
+                      target={"_blank"}
+                      rel="noreferrer"
+                      download
+                      variant="primary"
+                      className="py-3 btn px-3 fw-bold mb-0 about-button mt-5 text-decoration-none"
+                    >
+                      DOWNLOAD CV <IoMdDownload className="fs-3" />{" "}
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
             <div>
-              <div className='shadow skillsAndabout py-2 px-3 mb-4'>
-                <h5 className='text-uppercase h4'>Skills <BsCodeSlash className='mb-1 ms-3 aboutme-icons border-0 rounded-0' /></h5>
+              <div className="shadow skillsAndabout py-2 px-3 mb-4">
+                <h5 className="text-uppercase h4">
+                  Skills{" "}
+                  <BsCodeSlash className="mb-1 ms-3 aboutme-icons border-0 rounded-0" />
+                </h5>
               </div>
-              <div className='ms-sm-3 pe-xxl-5'>
-                <div className='d-flex align-items-center justify-content-between mb-3 me-xxl-5'>
+              <div className="ms-sm-3 pe-xxl-5">
+                {/* <div className='d-flex align-items-center justify-content-between mb-3 me-xxl-5'>
                   <p className='text-uppercase fw-bold'>HTML</p>
                   <FaHtml5 className='mb-1 aboutme-icons me-xxl-5 display-4 border-0 rounded-0' />
                 </div>
                 <div className='d-flex align-items-center justify-content-between mb-3 me-xxl-5'>
                   <p className='text-uppercase fw-bold'>CSS</p>
                   <FaCss3Alt className='mb-1 aboutme-icons me-xxl-5 display-4 border-0 rounded-0' />
+                </div> */}
+                <div className="d-flex align-items-center justify-content-between mb-3 me-xxl-5">
+                  <p className="text-uppercase fw-bold">NextJs</p>
+                  <SiNextdotjs className="mb-1 aboutme-icons me-xxl-5 display-4 border-0 rounded-0" />
                 </div>
-                <div className='d-flex align-items-center justify-content-between mb-3 me-xxl-5'>
-                  <p className='text-uppercase fw-bold'>JavaScript</p>
-                  <SiJavascript className='mb-1 aboutme-icons me-xxl-5 display-5 border-0 rounded-0' />
+                <div className="d-flex align-items-center justify-content-between mb-3 me-xxl-5">
+                  <p className="text-uppercase fw-bold">ReactJs</p>
+                  <FaReact className="mb-1 aboutme-icons me-xxl-5 display-4 border-0 rounded-0" />
                 </div>
-                <div className='d-flex align-items-center justify-content-between mb-3 me-xxl-5'>
-                  <p className='text-uppercase fw-bold'>Bootstrap</p>
-                  <FaBootstrap className='mb-1 aboutme-icons me-xxl-5 display-4 border-0 rounded-0' />
+                <div className="d-flex align-items-center justify-content-between mb-3 me-xxl-5">
+                  <p className="text-uppercase fw-bold">Typescript</p>
+                  <BiLogoTypescript className="mb-1 aboutme-icons me-xxl-5 display-4 border-0 rounded-0" />
                 </div>
-                <div className='d-flex align-items-center justify-content-between mb-3 me-xxl-5'>
-                  <p className='text-uppercase fw-bold'>SCSS</p>
-                  <FaSass className='mb-1 aboutme-icons me-xxl-5 display-4 border-0 rounded-0' />
+                <div className="d-flex align-items-center justify-content-between mb-3 me-xxl-5">
+                  <p className="text-uppercase fw-bold">JavaScript</p>
+                  <SiJavascript className="mb-1 aboutme-icons me-xxl-5 display-5 border-0 rounded-0" />
                 </div>
-                <div className='d-flex align-items-center justify-content-between mb-3 me-xxl-5'>
-                  <p className='text-uppercase fw-bold'>ReactJs</p>
-                  <FaReact className='mb-1 aboutme-icons me-xxl-5 display-4 border-0 rounded-0' />
+                {/* <div className="d-flex align-items-center justify-content-between mb-3 me-xxl-5">
+                  <p className="text-uppercase fw-bold">Bootstrap</p>
+                  <FaBootstrap className="mb-1 aboutme-icons me-xxl-5 display-4 border-0 rounded-0" />
+                </div> */}
+                <div className="d-flex align-items-center justify-content-between mb-3 me-xxl-5">
+                  <p className="text-uppercase fw-bold">SCSS</p>
+                  <FaSass className="mb-1 aboutme-icons me-xxl-5 display-4 border-0 rounded-0" />
                 </div>
-                <div className='d-flex align-items-center justify-content-between mb-3 me-xxl-5'>
-                  <p className='text-uppercase fw-bold'>TailwindCSS</p>
-                  <SiTailwindcss className='mb-1 aboutme-icons me-xxl-5 display-4 border-0 rounded-0' />
+                <div className="d-flex align-items-center justify-content-between mb-3 me-xxl-5">
+                  <p className="text-uppercase fw-bold">TailwindCSS</p>
+                  <SiTailwindcss className="mb-1 aboutme-icons me-xxl-5 display-4 border-0 rounded-0" />
                 </div>
               </div>
             </div>
           </div>
-          <div className='pt-5'>
-            <h5 className='text-uppercase text-center mt-5 mb-4'>Education & Experience</h5>
-            <div className='col-11 m-auto'>
-              <div className='text-center mb-4'>
-                <GiGraduateCap className='display-4' />
+          <div className="pt-5">
+            <h5 className="text-uppercase text-center mt-5 mb-4">
+              Education & Experience
+            </h5>
+            <div className="col-11 m-auto">
+              <div className="text-center mb-4">
+                <GiGraduateCap className="display-4" />
               </div>
-              <div className='row row-cols-xl-3 row-cols-md-2 row-cols-1 justify-content-center col-md-12 col-sm-10 m-auto'>
-                <div className='col mb-md-0 mb-5'>
-                  <Cards cardTitle={"2015 - 2018"} cardSubTitle={"HIGH SCHOOL DIPLOMA"} CardText={""} />
+              <div className="row row-cols-xl-3 row-cols-md-2 row-cols-1 justify-content-center col-md-12 col-sm-10 m-auto">
+                <div className="col mb-md-0 mb-5">
+                  <Cards
+                    cardTitle={"2015 - 2018"}
+                    cardSubTitle={"HIGH SCHOOL DIPLOMA"}
+                    CardText={""}
+                  />
                 </div>
-                <div className='col'>
-                  <Cards cardTitle={"2020 - PRESENT"} cardSubTitle={"BACHELOR'S DEGREE"} CardText={""} />
+                <div className="col">
+                  <Cards
+                    cardTitle={"2020 - 2026"}
+                    cardSubTitle={"BACHELOR'S DEGREE"}
+                    CardText={""}
+                  />
                 </div>
               </div>
-              <div className='text-center mb-4 mt-5'>
-                <MdWork className='display-4' />
+              <div className="text-center mb-4 mt-5">
+                <MdWork className="display-4" />
               </div>
-              <div className='row row-cols-xl-3 row-cols-md-2 row-cols-1 justify-content-center col-md-12 col-sm-10 m-auto'>
-                <div className='col mb-xl-0 mb-5'>
-                  <Cards cardTitle={"2022"} cardSubTitle={"FRONTEND DEVELOPER INTERN (HTML, CSS, JS)"} CardText={"Worked with my team members in planning website development, converting mockups into useable web presence with HTML, CSS and JavaScript."} />
-                </div>
-                <div className='col mb-md-0 mb-5'>
-                  <Cards cardTitle={"2022"} cardSubTitle={"FRONTEND DEVELOPER INTERN (REACT JS)"} CardText={"I worked with ReactJS to create dynamic webpages and web applications."} />
-                </div>
+              <div className="row row-cols-xl-3 row-cols-md-2 row-cols-1 justify-content-center col-md-12 col-sm-10 m-auto">
+                {experiences.map((exp, index) => (
+                  <div key={index} className="col mb-xl-0 mb-5">
+                    <Cards
+                      cardTitle={exp.title}
+                      cardSubTitle={exp.subTitle}
+                      CardText={exp.text}
+                    />
+                  </div>
+                ))}
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div >
-  )
+    </div>
+  );
 }
 
-export default About
+export default About;
