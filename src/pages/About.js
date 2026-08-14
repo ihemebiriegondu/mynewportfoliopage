@@ -1,231 +1,213 @@
-import React from "react";
+import { useState } from 'react';
+import Cards from '../components/cards';
+import { BsFillPersonLinesFill, BsCodeSlash } from 'react-icons/bs';
+import { MdWork } from 'react-icons/md';
+import { IoMdDownload } from 'react-icons/io';
+import { GiGraduateCap } from 'react-icons/gi';
+import { HiChevronDown, HiChevronUp } from 'react-icons/hi';
+import { usePortfolioSection } from '../hooks/usePortfolioSection';
+import { hasValue } from '../services/portfolioService';
+import '../CSS/about.css';
 
-import HeaderImg from "../assests/HeaderImg.jpg";
-import Cards from "../components/cards";
-
-import IhemebiriEgonduCV from "../assests/Egonduihemebiri.pdf";
-import { BsFillPersonLinesFill, BsCodeSlash, BsBraces } from "react-icons/bs";
-import { FaSass, FaReact, FaMusic } from "react-icons/fa";
-import { SiNextdotjs } from "react-icons/si";
-import { BiMoviePlay, BiLogoTypescript } from "react-icons/bi";
-import { SiJavascript, SiTailwindcss } from "react-icons/si";
-import { MdWork } from "react-icons/md";
-import { IoFastFoodSharp } from "react-icons/io5";
-import { IoMdDownload } from "react-icons/io";
-import { GiGraduateCap } from "react-icons/gi";
-
-import "../CSS/about.css";
+const SKILLS_PREVIEW_COUNT = 10;
 
 function About() {
-  const experiences = [
-    {
-      title: "July 2025 - Present",
-      subTitle: "Frontend developer - Errandify",
-      text: `Solely developed and maintained the frontend of Errandify’s platform using Next.js, TypeScript, and TailwindCSS.
-      
-      Collaborated with backend developers to integrate APIs and deliver a responsive, scalable, and user-friendly interface.
-      
-      Solely developed and maintained the frontend of Errandify’s platform using Next.js, TypeScript, and TailwindCSS. `
-    },
-    {
-      title: "Jan 2025 - Present",
-      subTitle: "Junior frontend developer - AsoebiAfrica",
-      text: `Built and maintained user interfaces for Asoebi Africa’s platform using Next.js and TailwindCSS. 
-      
-      Collaborated closely with designers, backend developers and fellow frontend developers to improve product quality and user experience.
-      
-      Built and maintained user interfaces for Asoebi Africa’s platform using Next.js and TailwindCSS. `
-    },
-    {
-      title: "Oct 2024 - Dec 2024",
-      subTitle: "Frontend developer intern - AsoebiAfrica",
-      text: `Assisted in developing and optimizing frontend components using Next.js.
-      
-      Gained hands-on experience with TypeScript and Next.js in a production environment.`
-    },
-    {
-      title: "Sept 2022",
-      subTitle: "Frontend developer intern - SideHustle",
-      text: "I worked with ReactJS to create dynamic webpages and web applications."
-    },
-    {
-      title: "May 2022",
-      subTitle: "Frontend developer intern - SideHustle",
-      text: "Worked with my team members in planning website development, converting mockups into useable web presence with HTML, CSS and JavaScript."
-    }
-  ];
+  const { data, loading } = usePortfolioSection('about');
+  const [showAllSkills, setShowAllSkills] = useState(false);
+
+  const skills = data.skills || [];
+  const interests = data.interests || [];
+  const education = data.education || [];
+  const experiences = data.experiences || [];
+  const visibleSkills = showAllSkills
+    ? skills
+    : skills.slice(0, SKILLS_PREVIEW_COUNT);
+  const aboutImage = hasValue(data.aboutImage) ? data.aboutImage : null;
 
   return (
     <div className="mainAbout">
       <div className="col-12 mainAboutDiv">
         <div>
-          <div className="d-flex justify-content-center">
-            <div className="about-img-sub-div">
-              <img src={HeaderImg} alt="hero img" className="about-img" />
+          {aboutImage && (
+            <div className="d-flex justify-content-center">
+              <div className="about-img-sub-div">
+                <img src={aboutImage} alt={data.name || 'Profile'} className="about-img" />
+              </div>
             </div>
-          </div>
+          )}
+
           <div className="row row-cols-lg-2 g-5 mt-5 col-sm-10 col-12 m-auto">
-            <div className="">
+            <div>
               <div className="shadow skillsAndabout py-2 px-3 mb-4">
                 <h5 className="text-uppercase h4">
-                  About Me{" "}
+                  About Me{' '}
                   <BsFillPersonLinesFill className="mb-1 ms-3 aboutme-icons border-0 rounded-0" />
                 </h5>
               </div>
 
               <div className="ms-sm-3">
-                <p className="text-uppercase fw-bold">
-                  Name:{" "}
-                  <span className="text-capitalize ms-3">Egondu Ihemebiri</span>
-                </p>
-                {/*<p className='text-uppercase fw-bold'>Age: <span className='text-capitalize ms-3'>20 years</span></p>*/}
-                <p className="text-uppercase fw-bold">
-                  Nationality:{" "}
-                  <span className="text-capitalize ms-3">Nigerian</span>
-                </p>
-                <p className="text-uppercase fw-bold">
-                  Email:{" "}
-                  <a
-                    href="mailto:ihemebiriegondu@gmail.com"
-                    className="text-lowercase ms-3 text-decoration-none"
-                  >
-                    ihemebiriegondu@gmail.com
-                  </a>
-                </p>
-                <p className="text-uppercase fw-bold">
-                  Phone:{" "}
-                  <a
-                    href="tel:+2347050286131"
-                    className="text-capitalize ms-3 text-decoration-none"
-                  >
-                    +234 903 177 1297
-                  </a>
-                </p>
-                <p className="text-uppercase fw-bold">
-                  Languages:{" "}
-                  <span className="text-capitalize ms-3">English</span>
-                </p>
-                <div>
-                  <h6 className="text-uppercase text-center mt-4 h6">
-                    My Interest
-                  </h6>
-                  <div className="d-flex align-items-center justify-content-center mt-4">
-                    <div className="py-sm-3 py-2 px-sm-3 px-2 aboutme-icons-div text-center me-sm-5 me-4">
-                      <FaMusic className="aboutme-icons h4 p-0 m-0 mb-0" />
-                    </div>
-                    <div className="py-sm-3 py-2 px-sm-3 px-2 aboutme-icons-div text-center me-sm-5 me-4">
-                      <BiMoviePlay className="aboutme-icons h4 p-0 m-0 mb-0" />
-                    </div>
-                    <div className="py-sm-3 py-2 px-sm-3 px-2 aboutme-icons-div text-center me-sm-5 me-4">
-                      <IoFastFoodSharp className="aboutme-icons h4 p-0 m-0 mb-0" />
-                    </div>
-                    <div className="py-sm-3 py-2 px-sm-3 px-2 aboutme-icons-div text-center">
-                      <BsBraces className="aboutme-icons h4 p-0 m-0 mb-0" />
+                {hasValue(data.name) && (
+                  <p className="text-uppercase fw-bold">
+                    Name:{' '}
+                    <span className="text-capitalize ms-3">{data.name}</span>
+                  </p>
+                )}
+                {hasValue(data.nationality) && (
+                  <p className="text-uppercase fw-bold">
+                    Nationality:{' '}
+                    <span className="text-capitalize ms-3">{data.nationality}</span>
+                  </p>
+                )}
+                {hasValue(data.email) && (
+                  <p className="text-uppercase fw-bold">
+                    Email:{' '}
+                    <a
+                      href={`mailto:${data.email}`}
+                      className="text-lowercase ms-3 text-decoration-none"
+                    >
+                      {data.email}
+                    </a>
+                  </p>
+                )}
+                {hasValue(data.phone) && (
+                  <p className="text-uppercase fw-bold">
+                    Phone:{' '}
+                    <a
+                      href={`tel:${data.phone.replace(/\s/g, '')}`}
+                      className="text-capitalize ms-3 text-decoration-none"
+                    >
+                      {data.phone}
+                    </a>
+                  </p>
+                )}
+                {data.languages?.length > 0 && (
+                  <p className="text-uppercase fw-bold">
+                    Languages:{' '}
+                    <span className="text-capitalize ms-3">
+                      {data.languages.join(', ')}
+                    </span>
+                  </p>
+                )}
+
+                {interests.length > 0 && (
+                  <div>
+                    <h6 className="text-uppercase text-center mt-4 h6">My Interest</h6>
+                    <div className="about-tags-wrap">
+                      {interests.map((interest) => (
+                        <span key={interest} className="about-tag">
+                          {interest}
+                        </span>
+                      ))}
                     </div>
                   </div>
-                  <div className="">
+                )}
+
+                {hasValue(data.cvUrl) && (
+                  <div>
                     <a
-                      href={IhemebiriEgonduCV}
-                      target={"_blank"}
+                      href={data.cvUrl}
+                      target="_blank"
                       rel="noreferrer"
                       download
-                      variant="primary"
-                      className="py-3 btn px-3 fw-bold mb-0 about-button mt-5 text-decoration-none"
+                      className="py-3 btn px-3 fw-bold mb-0 about-button mt-5 text-decoration-none d-inline-flex align-items-center"
                     >
-                      DOWNLOAD CV <IoMdDownload className="fs-3" />{" "}
+                      DOWNLOAD CV <IoMdDownload className="fs-3 ms-2" />
                     </a>
                   </div>
-                </div>
+                )}
               </div>
             </div>
-            <div>
-              <div className="shadow skillsAndabout py-2 px-3 mb-4">
-                <h5 className="text-uppercase h4">
-                  Skills{" "}
-                  <BsCodeSlash className="mb-1 ms-3 aboutme-icons border-0 rounded-0" />
-                </h5>
-              </div>
-              <div className="ms-sm-3 pe-xxl-5">
-                {/* <div className='d-flex align-items-center justify-content-between mb-3 me-xxl-5'>
-                  <p className='text-uppercase fw-bold'>HTML</p>
-                  <FaHtml5 className='mb-1 aboutme-icons me-xxl-5 display-4 border-0 rounded-0' />
+
+            {skills.length > 0 && (
+              <div>
+                <div className="shadow skillsAndabout py-2 px-3 mb-4">
+                  <h5 className="text-uppercase h4">
+                    Skills{' '}
+                    <BsCodeSlash className="mb-1 ms-3 aboutme-icons border-0 rounded-0" />
+                  </h5>
                 </div>
-                <div className='d-flex align-items-center justify-content-between mb-3 me-xxl-5'>
-                  <p className='text-uppercase fw-bold'>CSS</p>
-                  <FaCss3Alt className='mb-1 aboutme-icons me-xxl-5 display-4 border-0 rounded-0' />
-                </div> */}
-                <div className="d-flex align-items-center justify-content-between mb-3 me-xxl-5">
-                  <p className="text-uppercase fw-bold">NextJs</p>
-                  <SiNextdotjs className="mb-1 aboutme-icons me-xxl-5 display-4 border-0 rounded-0" />
-                </div>
-                <div className="d-flex align-items-center justify-content-between mb-3 me-xxl-5">
-                  <p className="text-uppercase fw-bold">ReactJs</p>
-                  <FaReact className="mb-1 aboutme-icons me-xxl-5 display-4 border-0 rounded-0" />
-                </div>
-                <div className="d-flex align-items-center justify-content-between mb-3 me-xxl-5">
-                  <p className="text-uppercase fw-bold">Typescript</p>
-                  <BiLogoTypescript className="mb-1 aboutme-icons me-xxl-5 display-4 border-0 rounded-0" />
-                </div>
-                <div className="d-flex align-items-center justify-content-between mb-3 me-xxl-5">
-                  <p className="text-uppercase fw-bold">JavaScript</p>
-                  <SiJavascript className="mb-1 aboutme-icons me-xxl-5 display-5 border-0 rounded-0" />
-                </div>
-                {/* <div className="d-flex align-items-center justify-content-between mb-3 me-xxl-5">
-                  <p className="text-uppercase fw-bold">Bootstrap</p>
-                  <FaBootstrap className="mb-1 aboutme-icons me-xxl-5 display-4 border-0 rounded-0" />
-                </div> */}
-                <div className="d-flex align-items-center justify-content-between mb-3 me-xxl-5">
-                  <p className="text-uppercase fw-bold">SCSS</p>
-                  <FaSass className="mb-1 aboutme-icons me-xxl-5 display-4 border-0 rounded-0" />
-                </div>
-                <div className="d-flex align-items-center justify-content-between mb-3 me-xxl-5">
-                  <p className="text-uppercase fw-bold">TailwindCSS</p>
-                  <SiTailwindcss className="mb-1 aboutme-icons me-xxl-5 display-4 border-0 rounded-0" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="pt-5">
-            <h5 className="text-uppercase text-center mt-5 mb-4">
-              Education & Experience
-            </h5>
-            <div className="col-11 m-auto">
-              <div className="text-center mb-4">
-                <GiGraduateCap className="display-4" />
-              </div>
-              <div className="row row-cols-xl-3 row-cols-md-2 row-cols-1 justify-content-center col-md-12 col-sm-10 m-auto">
-                <div className="col mb-md-0 mb-5">
-                  <Cards
-                    cardTitle={"2015 - 2018"}
-                    cardSubTitle={"HIGH SCHOOL DIPLOMA"}
-                    CardText={""}
-                  />
-                </div>
-                <div className="col">
-                  <Cards
-                    cardTitle={"2020 - 2026"}
-                    cardSubTitle={"BACHELOR'S DEGREE"}
-                    CardText={""}
-                  />
-                </div>
-              </div>
-              <div className="text-center mb-4 mt-5">
-                <MdWork className="display-4" />
-              </div>
-              <div className="row row-cols-xl-3 row-cols-md-2 row-cols-1 justify-content-center col-md-12 col-sm-10 m-auto">
-                {experiences.map((exp, index) => (
-                  <div key={index} className="col mb-xl-0 mb-5">
-                    <Cards
-                      cardTitle={exp.title}
-                      cardSubTitle={exp.subTitle}
-                      CardText={exp.text}
-                    />
+                <div className="ms-sm-3 pe-xxl-5">
+                  <div className="about-skills-panel">
+                    <div className="about-tags-wrap">
+                      {visibleSkills.map((skill) => (
+                        <span key={skill} className="about-tag about-tag--skill">
+                          {skill}
+                        </span>
+                      ))}
+                    </div>
+                    {skills.length > SKILLS_PREVIEW_COUNT && (
+                      <button
+                        type="button"
+                        className="about-skills-toggle"
+                        onClick={() => setShowAllSkills((prev) => !prev)}
+                      >
+                        {showAllSkills ? (
+                          <>
+                            Show fewer skills <HiChevronUp className="ms-1" />
+                          </>
+                        ) : (
+                          <>
+                            Show all skills ({skills.length}){' '}
+                            <HiChevronDown className="ms-1" />
+                          </>
+                        )}
+                      </button>
+                    )}
                   </div>
-                ))}
+                </div>
+              </div>
+            )}
+          </div>
+
+          {(education.length > 0 || experiences.length > 0) && (
+            <div className="pt-5">
+              <h5 className="text-uppercase text-center mt-5 mb-4">
+                Education & Experience
+              </h5>
+              <div className="col-11 m-auto">
+                {education.length > 0 && (
+                  <>
+                    <div className="text-center mb-4">
+                      <GiGraduateCap className="display-4" />
+                    </div>
+                    <div className="row row-cols-xl-3 row-cols-md-2 row-cols-1 justify-content-center col-md-12 col-sm-10 m-auto g-4">
+                      {education.map((item, index) => (
+                        <div key={`edu-${index}`} className="col d-flex">
+                          <Cards
+                            cardTitle={item.title}
+                            cardSubTitle={item.subTitle}
+                            CardText={item.text || ''}
+                          />
+                        </div>
+                      ))}
+                    </div>
+                  </>
+                )}
+
+                {experiences.length > 0 && (
+                  <>
+                    <div className="text-center mb-4 mt-5">
+                      <MdWork className="display-4" />
+                    </div>
+                    <div className="row row-cols-xl-3 row-cols-md-2 row-cols-1 justify-content-center col-md-12 col-sm-10 m-auto g-4">
+                      {experiences.map((exp, index) => (
+                        <div key={`exp-${index}`} className="col d-flex">
+                          <Cards
+                            cardTitle={exp.title}
+                            cardSubTitle={exp.subTitle}
+                            CardText={exp.text || ''}
+                            expandable={hasValue(exp.text)}
+                          />
+                        </div>
+                      ))}
+                    </div>
+                  </>
+                )}
               </div>
             </div>
-          </div>
+          )}
         </div>
+        {loading && <span className="visually-hidden">Loading about content</span>}
       </div>
     </div>
   );

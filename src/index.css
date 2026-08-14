@@ -18,8 +18,11 @@ body {
 }
 
 #root {
-  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  min-height: 100%;
   background-color: #0c0531;
+  overflow-x: clip;
 }
 
 code {
@@ -53,6 +56,12 @@ body::-webkit-scrollbar-thumb {
   background-color: #1b033c !important;
 }
 
+@media (min-width: 992px) {
+  .offCanvas {
+    display: none !important;
+  }
+}
+
 .offcanvas-header .btn-close {
   color: white !important;
   background-color: #93f9c8 !important;
@@ -64,13 +73,70 @@ body::-webkit-scrollbar-thumb {
   text-decoration: none !important;
 }
 
+header {
+  overflow: visible;
+  position: relative;
+  z-index: 1030;
+}
+
 .navbar {
   background: inherit;
   width: 100%;
-  position: absolute;
-  overflow: hidden;
+  overflow: visible;
   box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.2);
   background-color: #1b033c;
+}
+
+.navbar.fixed-top {
+  position: fixed;
+  z-index: 1030;
+}
+
+.navbar > .container-fluid {
+  overflow: visible;
+}
+
+.navbar-brand-logo {
+  overflow: visible;
+  position: relative;
+  z-index: 1040;
+}
+
+.nav-logo {
+  position: relative;
+  display: inline-block;
+  overflow: visible;
+  text-decoration: none !important;
+  font-family: 'Neonderthaw', cursive;
+  font-size: 3.5rem;
+  line-height: 1;
+  padding: 0 0.35rem 0 0.45rem;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-logo::before {
+  content: 'Ego';
+  position: absolute;
+  left: 0.45rem;
+  top: 0;
+  font-family: 'Neonderthaw', cursive;
+  font-size: 3.5rem;
+  line-height: 1.15;
+  padding-bottom: 0.55rem;
+  background-image: linear-gradient(-225deg,
+      #9C00F4 0%,
+      #b2ffda 29%,
+      #ff00ff 67%,
+      blue 100%);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  animation: textclip 2s linear infinite;
+  pointer-events: none;
+  white-space: nowrap;
 }
 
 
@@ -82,17 +148,17 @@ body::-webkit-scrollbar-thumb {
       #b2ffda 29%,
       #ff00ff 67%,
       blue 100%);
-  background-size: auto auto;
-  background-clip: border-box;
   background-size: 200% auto;
-  color: #fff;
   background-clip: text;
-  text-fill-color: transparent;
   -webkit-background-clip: text;
+  color: transparent;
   -webkit-text-fill-color: transparent;
   animation: textclip 2s linear infinite;
   display: inline-block;
-  font-size: 190px;
+  font-size: 3.5rem;
+  line-height: 1;
+  padding: 0 0.25rem 0.4rem 0.35rem;
+  margin-bottom: -0.4rem;
 }
 
 @keyframes textclip {

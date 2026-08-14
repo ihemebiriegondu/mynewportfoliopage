@@ -20,3 +20,81 @@
     transition: all 0.5s ease-in-out;
     color: rgb(100, 15, 179) !important;
 }
+
+.cards--expandable {
+    min-height: 14rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.cards--expandable .card-body {
+    flex: 1;
+}
+
+.cards-text-wrapper {
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.cards-text-wrapper--clamped .cards-text {
+    max-height: 7.5rem;
+    overflow: hidden;
+}
+
+.cards-text-wrapper--clamped::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 2.25rem;
+    height: 2.5rem;
+    background: linear-gradient(to bottom, transparent, #0d0537);
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.cards--expanded .cards-text {
+    max-height: none;
+}
+
+.cards-expand-btn {
+    align-self: center;
+    margin-top: auto;
+    padding: 0.35rem 0.75rem;
+    border: none;
+    background: transparent;
+    color: #93f9c8;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.cards-expand-btn:hover {
+    color: #ffffff;
+    transform: translateY(1px);
+}
+
+.cards:hover .cards-expand-btn {
+    color: #0c0531;
+}
+
+.cards.cards--expandable:hover:not(.cards--expanded)
+    .cards-text-wrapper--clamped::after {
+    background: linear-gradient(to bottom, transparent, #93f9c8);
+}
+
+@media (max-width: 767px) {
+    .cards--expandable {
+        min-height: 12rem;
+    }
+
+    .cards-text-wrapper--clamped .cards-text {
+        max-height: 6.5rem;
+    }
+}

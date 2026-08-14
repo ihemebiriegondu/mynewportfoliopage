@@ -28,10 +28,16 @@
     background-color: #0c0531 !important;
     color: white;
     width: 100%;
+    max-width: 100%;
     border-radius: 20px 20px 0 0 !important;
     overflow-y: scroll !important;
     -ms-overflow-style: none;
     scrollbar-width: none;
+}
+
+.main-modal.offcanvas-bottom {
+    height: 93vh;
+    max-height: 93vh;
 }
 
 .main-modal::-webkit-scrollbar {

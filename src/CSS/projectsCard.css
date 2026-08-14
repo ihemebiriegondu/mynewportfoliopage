@@ -2,6 +2,7 @@
     overflow: hidden;
     position: relative;
     border: 0 !important;
+    width: 100%;
     transition: all 0.5s ease-in-out;
     background-color: #bad0cc;
 }
@@ -33,7 +34,7 @@
 .projectcardbodyImg img {
     height: 100%;
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
     transition: all 0.5s ease-in-out;
 }
 
